@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SmiSdk
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        SmiSdk.getAppSDAuth(mySdkKey, userId: myUserId, showSDMessage : true)
         return true
     }
 
@@ -39,6 +41,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func receivedStateChage(notif: NSNotification) {
+        var sr: SmiResult = notif.object
+        NSLog("receivedStateChage, sdState: %ld", Int(sr.sdState))
+        if sr.sdState == SD_AVAILABLE {
+            // TODO: show a banner or message to user, indicating that the data usage is sponsored and do not apply to user data plan
+            
+        } else if sr.sdState == SD_NOT_AVAILABLE {
+            // TODO: show a banner or message to user, indicating that the data
+            ("receivedStateChage, sdReason %ld", Int(sr.sdReason))
+        }
+        else if sr.sdState == SD_WIFI {
+            // wifi connection
+        }
+        
     }
 
 
