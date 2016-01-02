@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SmiSdk
+import SmiSdk.h
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
