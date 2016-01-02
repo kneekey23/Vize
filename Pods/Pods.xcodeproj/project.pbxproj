@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6E579FF358AF2261C8682A7FA383EAA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		8B9C37DA1C3869720012EB24 /* libsmisdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9C37D91C3869720012EB24 /* libsmisdk.a */; };
-		8B9C37DC1C3869870012EB24 /* SmiSdk.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9C37DB1C3869870012EB24 /* SmiSdk.h */; };
 		B991A49F4C12A4F8462C02B69D83DB11 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -86,8 +84,6 @@
 		8883971291DFC56664D52BBE433F203E /* KandyRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyRecord.h; path = KandySDK.framework/Versions/A/Headers/KandyRecord.h; sourceTree = "<group>"; };
 		88BC879246FDB184D2BD1515AACFF061 /* KandyUserProvisionInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyUserProvisionInfo.h; path = KandySDK.framework/Versions/A/Headers/KandyUserProvisionInfo.h; sourceTree = "<group>"; };
 		8AFA048D3B7FC347C9BC1941894C68D2 /* KandyCloudStorageServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCloudStorageServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyCloudStorageServiceEnums.h; sourceTree = "<group>"; };
-		8B9C37D91C3869720012EB24 /* libsmisdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsmisdk.a; path = "Target Support Files/Pods/libsmisdk.a"; sourceTree = "<group>"; };
-		8B9C37DB1C3869870012EB24 /* SmiSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SmiSdk.h; path = "Target Support Files/Pods/SmiSdk.h"; sourceTree = "<group>"; };
 		8DBF0947B01F2356A5C49940D76CBD7A /* KandySocialProfileContactRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySocialProfileContactRecord.h; path = KandySDK.framework/Versions/A/Headers/KandySocialProfileContactRecord.h; sourceTree = "<group>"; };
 		8E9FB43487A384AA71F21FEE8048BD03 /* KandyContactParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactParams.h; path = KandySDK.framework/Versions/A/Headers/KandyContactParams.h; sourceTree = "<group>"; };
 		908F9CDE7DB42872F4812367C19B70D1 /* KandyMessageProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyMessageProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyMessageProtocol.h; sourceTree = "<group>"; };
@@ -146,8 +142,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B9C37DC1C3869870012EB24 /* SmiSdk.h in Frameworks */,
-				8B9C37DA1C3869720012EB24 /* libsmisdk.a in Frameworks */,
 				6E579FF358AF2261C8682A7FA383EAA6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,8 +210,6 @@
 		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				8B9C37DB1C3869870012EB24 /* SmiSdk.h */,
-				8B9C37D91C3869720012EB24 /* libsmisdk.a */,
 				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
 			);
 			name = iOS;
@@ -418,6 +410,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
@@ -438,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -462,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
 			buildSettings = {
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -500,6 +495,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
