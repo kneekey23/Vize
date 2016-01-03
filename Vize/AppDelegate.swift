@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "receivedStateChage:", name: SDSTATE_CHANGE_NOTIF, object: nil);
         SmiSdk.getAppSDAuth("dmi-att-hack-68fcfe5e708bfaa3806c4888912ea6f2ecb446fd", userId: "vizeapp", showSDMessage : true)
         return true
     }
@@ -44,16 +45,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func receivedStateChage(notif: NSNotification) {
-        var sr: SmiResult = notif.object as! SmiResult
-//        NSLog("receivedStateChange, sdState: %ld", Int(sr.sdState))
-        if String(sr.sdState) == "SD_AVAILABLE" {
-            // TODO: show a banner or message to user, indicating that the data usage is sponsored and do not apply to user data plan
-            
-        } else if String(sr.sdState) == "SD_NOT_AVAILABLE" {
-            // TODO: show a banner or message to user, indicating that the data
-            ("receivedStateChange, sdReason %ld", String(sr.sdReason))
+        let sr: SmiResult = notif.object as! SmiResult;
+        NSLog("receivedStateChage, sdState: %ld", sr.sdState.rawValue);
+        if (sr.sdState == SdState.SD_AVAILABLE) {
+            // use sponsored logo to display sponsored message
         }
-        else if String(sr.sdState) == "SD_WIFI" {
+        else if sr.sdState == SdState.SD_NOT_AVAILABLE {
+            // non sponsored connection
+            NSLog("receivedStateChage, sdReason %ld", sr.sdReason.rawValue);
+        }
+        else if sr.sdState == SdState.SD_WIFI {
             // wifi connection
         }
         
