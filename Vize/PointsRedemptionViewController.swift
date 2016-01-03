@@ -96,14 +96,13 @@ class PointsRedemptionViewController: UIViewController, UITableViewDataSource, U
         self.dismissViewControllerAnimated(true, completion: nil)
         NSLog(String(result.rawValue))
 //        if result == Cancelled {
-//            NSLog("Message cancelled")
 //        }
-//        else if result == .Sent {
-//            NSLog("Message sent")
-//        }
-//        else {
-//            NSLog("Message failed")
-//        }
+//            else if result == .Sent {
+//                NSLog("Message sent")
+//            }
+//            else {
+//                NSLog("Message failed")
+//            }
         
     }
     
@@ -139,4 +138,5 @@ class PointsRedemptionViewController: UIViewController, UITableViewDataSource, U
             self.sendSMS(adId)
         }).resume()
     }
+
 }

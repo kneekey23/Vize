@@ -13,16 +13,19 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
   
     @IBOutlet weak var projectTableView: UITableView!
     //var featuredRouteList:Array<DDBTableRow>?
-    var lock:NSLock?
     var lastEvaluatedKey:[NSObject : AnyObject]!
     var  doneLoading = false
     
     var needsToRefresh = true
-    var projectList: [Project] = []
+
+    var projectList: [Project]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lock = NSLock()
+        if projectList == nil {
+            projectList = []
+        }
+      
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,6 +34,10 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        if projectList == nil {
+            projectList = []
+        }
+ 
         if self.needsToRefresh {
            // self.refreshList(true)
             self.needsToRefresh = false
@@ -42,48 +49,6 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
-//    func refreshList(startFromBeginning: Bool)  {
-//        if (self.lock?.tryLock() != nil) {
-//            if startFromBeginning {
-//                self.lastEvaluatedKey = nil;
-//                self.doneLoading = false
-//            }
-//            
-//            
-//            UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-//            
-//            let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.defaultDynamoDBObjectMapper()
-//            let queryExpression = AWSDynamoDBScanExpression()
-//            queryExpression.exclusiveStartKey = self.lastEvaluatedKey
-//            queryExpression.limit = 20;
-//            dynamoDBObjectMapper.scan(DDBTableRow.self, expression: queryExpression).continueWithExecutor(AWSExecutor.mainThreadExecutor(), withBlock: { (task:AWSTask!) -> AnyObject! in
-//                
-//                if self.lastEvaluatedKey == nil {
-//                    self.featuredRouteList?.removeAll(keepCapacity: true)
-//                }
-//                
-//                if task.result != nil {
-//                    let paginatedOutput = task.result as! AWSDynamoDBPaginatedOutput
-//                    for item in paginatedOutput.items as! [DDBTableRow] {
-//                        self.featuredRouteList?.append(item)
-//                    }
-//                    
-//                    self.lastEvaluatedKey = paginatedOutput.lastEvaluatedKey
-//                    if paginatedOutput.lastEvaluatedKey == nil {
-//                        self.doneLoading = true
-//                    }
-//                }
-//                
-//                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-//                self.featuredRouteTable.reloadData()
-//                
-//                if ((task.error) != nil) {
-//                    print("Error: \(task.error)")
-//                }
-//                return nil
-//            })
-//        }
-//    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return projectList.count
@@ -96,7 +61,7 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Configure the cell...
             let item = projectList[indexPath.row]
             cell.textLabel?.text = item.title
-            cell.detailTextLabel?.text = item.grade
+            cell.detailTextLabel?.text = "Grade" + item.grade
         
         
         return cell
@@ -118,21 +83,25 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
-//        if segue.identifier == "ThemedRouteDetailViewController" {
-//            let detailViewController = segue.destinationViewController as! ThemedRouteDetailViewController
-//            if sender != nil {
-//                if (sender!.isKindOfClass(UITableViewCell)) {
-//                    let cell = sender as! UITableViewCell
-//                    
-//                    
-//                    let indexPath = self.featuredRouteTable.indexPathForCell(cell)
-//                    let tableRow = self.featuredRouteList?[indexPath!.row]
-//                    detailViewController.tableRow = tableRow
-//                    
-//                }
-//                
-//            }
-//        }
+        if segue.identifier == "ToProjectBoard" {
+            let bpvViewController = segue.destinationViewController as! ProjectBoardViewController
+            if sender != nil {
+                if (sender!.isKindOfClass(UITableViewCell)) {
+                    let cell = sender as! UITableViewCell
+                    
+                    
+                    let indexPath = self.projectTableView.indexPathForCell(cell)
+                    let tableRow = self.projectList[indexPath!.row]
+                    
+                    bpvViewController.progressTasks = tableRow.progressTasks
+                    bpvViewController.tasksToComplete = tableRow.tasksToComplete
+                    bpvViewController.doneTasks = tableRow.doneTasks
+                    bpvViewController.prepTasks = tableRow.prepTasks
+                    
+                }
+                
+            }
+        }
         
         
         

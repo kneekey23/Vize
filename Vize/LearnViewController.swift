@@ -16,6 +16,8 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBOutlet weak var listTableView: UITableView!
     
+    let dbref = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com")
+    
     @IBAction func chooseList(sender: AnyObject) {
         
        
@@ -98,7 +100,9 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
 //                    projRef.setValue(biologyProjects)
 
                     // Get a reference to our db endpoint
+
                     let ref = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com/projects/" + selectedSubjectOrCategory!)
+
                     // Attach a closure to read the data
                     ref.observeSingleEventOfType(.Value, withBlock: { snapshot in
                         var projects = [Project]()
@@ -116,7 +120,9 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
                         
                         //send selectedSubjectOrCategory to db to get correct project list and popuale. then set it equal to a variable on next view controller.
                         projectViewController.projectList = projects
-                        print(projectViewController.projectList.count)
+
+                        projectViewController.projectTableView.reloadData()
+
                         }, withCancelBlock: { error in
                             print(error.description)
                     })
@@ -128,7 +134,7 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
         
         if segue.identifier == "logOut"{
-//            ref.unauth()
+            dbref.unauth()
             let loginVC = segue.destinationViewController as! LoginController
             loginVC.hidesBottomBarWhenPushed = true
         }
