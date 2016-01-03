@@ -22,6 +22,10 @@
 		81AF48FA1C38956500309615 /* RewardsSystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF48F91C38956500309615 /* RewardsSystemViewController.swift */; };
 		81AF48FC1C3896AD00309615 /* PointsRedemptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF48FB1C3896AD00309615 /* PointsRedemptionViewController.swift */; };
 		81AF48FE1C3896FA00309615 /* PointsRedemptionInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF48FD1C3896FA00309615 /* PointsRedemptionInfoViewController.swift */; };
+		81AF49001C38B9EC00309615 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF48FF1C38B9EC00309615 /* ContentViewController.swift */; };
+		81AF49021C38BBA600309615 /* ProjectBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF49011C38BBA600309615 /* ProjectBoardViewController.swift */; };
+		81AF49041C38CC2C00309615 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF49031C38CC2C00309615 /* Extensions.swift */; };
+		81AF49061C38D7ED00309615 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF49051C38D7ED00309615 /* TaskViewController.swift */; };
 		8B9C37DE1C386B0E0012EB24 /* DataRewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C37DD1C386B0E0012EB24 /* DataRewards.swift */; };
 		8B9C37E01C386EC10012EB24 /* SponsoredData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C37DF1C386EC10012EB24 /* SponsoredData.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +49,10 @@
 		81AF48F91C38956500309615 /* RewardsSystemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsSystemViewController.swift; sourceTree = "<group>"; };
 		81AF48FB1C3896AD00309615 /* PointsRedemptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsRedemptionViewController.swift; sourceTree = "<group>"; };
 		81AF48FD1C3896FA00309615 /* PointsRedemptionInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsRedemptionInfoViewController.swift; sourceTree = "<group>"; };
+		81AF48FF1C38B9EC00309615 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		81AF49011C38BBA600309615 /* ProjectBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectBoardViewController.swift; sourceTree = "<group>"; };
+		81AF49031C38CC2C00309615 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		81AF49051C38D7ED00309615 /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		8B9C37DD1C386B0E0012EB24 /* DataRewards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRewards.swift; sourceTree = "<group>"; };
 		8B9C37DF1C386EC10012EB24 /* SponsoredData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsoredData.swift; sourceTree = "<group>"; };
 		ED1CDE8EB91138C49432709C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +116,10 @@
 				81AF48F91C38956500309615 /* RewardsSystemViewController.swift */,
 				81AF48FB1C3896AD00309615 /* PointsRedemptionViewController.swift */,
 				81AF48FD1C3896FA00309615 /* PointsRedemptionInfoViewController.swift */,
+				81AF48FF1C38B9EC00309615 /* ContentViewController.swift */,
+				81AF49011C38BBA600309615 /* ProjectBoardViewController.swift */,
+				81AF49031C38CC2C00309615 /* Extensions.swift */,
+				81AF49051C38D7ED00309615 /* TaskViewController.swift */,
 			);
 			path = Vize;
 			sourceTree = "<group>";
@@ -245,15 +257,19 @@
 			files = (
 				81AF48DD1C384BE700309615 /* LoginController.swift in Sources */,
 				8B9C37E01C386EC10012EB24 /* SponsoredData.swift in Sources */,
+				81AF49021C38BBA600309615 /* ProjectBoardViewController.swift in Sources */,
 				8B9C37DE1C386B0E0012EB24 /* DataRewards.swift in Sources */,
 				81AF48F31C3873D200309615 /* CreateAccountViewController.swift in Sources */,
 				81AF48F51C38742400309615 /* SurveyViewController.swift in Sources */,
 				81AF48F11C38711500309615 /* RewardsViewController.swift in Sources */,
+				81AF49001C38B9EC00309615 /* ContentViewController.swift in Sources */,
 				81AF48EF1C3870D500309615 /* ProjectViewController.swift in Sources */,
 				81AF48DB1C384BE700309615 /* AppDelegate.swift in Sources */,
 				81AF48ED1C38691500309615 /* LearnViewController.swift in Sources */,
+				81AF49041C38CC2C00309615 /* Extensions.swift in Sources */,
 				81AF48FA1C38956500309615 /* RewardsSystemViewController.swift in Sources */,
 				81AF48FE1C3896FA00309615 /* PointsRedemptionInfoViewController.swift in Sources */,
+				81AF49061C38D7ED00309615 /* TaskViewController.swift in Sources */,
 				81AF48FC1C3896AD00309615 /* PointsRedemptionViewController.swift in Sources */,
 				81AF48F71C387AF700309615 /* MainViewController.swift in Sources */,
 			);
