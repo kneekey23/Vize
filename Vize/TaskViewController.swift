@@ -13,12 +13,17 @@ class TaskViewController: UIViewController {
 
 
     @IBAction func markAsComplete(sender: AnyObject) {
+        
     }
 
     @IBAction func editTask(sender: AnyObject) {
+        
     }
+    
     @IBAction func grabTask(sender: AnyObject) {
+    
     }
+    
     @IBOutlet weak var taskDescription: UITextView!
     
     @IBAction func closeTask(sender: AnyObject) {
