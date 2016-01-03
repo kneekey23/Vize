@@ -27,6 +27,7 @@
 		81AF49041C38CC2C00309615 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF49031C38CC2C00309615 /* Extensions.swift */; };
 		81AF49061C38D7ED00309615 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF49051C38D7ED00309615 /* TaskViewController.swift */; };
 		81AF49081C39936A00309615 /* AddProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF49071C39936A00309615 /* AddProjectViewController.swift */; };
+		81AF490A1C39B64100309615 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF49091C39B64100309615 /* MessageViewController.swift */; };
 		8B9335631C38D7F4002E9891 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9335621C38D7F3002E9891 /* Project.swift */; };
 		8B9335671C38DBDC002E9891 /* libsmisdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9335651C38DBDC002E9891 /* libsmisdk.a */; };
 		8B93356B1C39309E002E9891 /* MessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93356A1C39309E002E9891 /* MessageComposer.swift */; };
@@ -58,6 +59,7 @@
 		81AF49031C38CC2C00309615 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		81AF49051C38D7ED00309615 /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		81AF49071C39936A00309615 /* AddProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProjectViewController.swift; sourceTree = "<group>"; };
+		81AF49091C39B64100309615 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		8B9335621C38D7F3002E9891 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		8B9335651C38DBDC002E9891 /* libsmisdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsmisdk.a; sourceTree = "<group>"; };
 		8B9335661C38DBDC002E9891 /* SmiSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmiSdk.h; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				81AF49031C38CC2C00309615 /* Extensions.swift */,
 				81AF49051C38D7ED00309615 /* TaskViewController.swift */,
 				81AF49071C39936A00309615 /* AddProjectViewController.swift */,
+				81AF49091C39B64100309615 /* MessageViewController.swift */,
 			);
 			path = Vize;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				81AF49001C38B9EC00309615 /* ContentViewController.swift in Sources */,
 				81AF48EF1C3870D500309615 /* ProjectViewController.swift in Sources */,
 				81AF48DB1C384BE700309615 /* AppDelegate.swift in Sources */,
+				81AF490A1C39B64100309615 /* MessageViewController.swift in Sources */,
 				81AF48ED1C38691500309615 /* LearnViewController.swift in Sources */,
 				81AF49041C38CC2C00309615 /* Extensions.swift in Sources */,
 				81AF48FA1C38956500309615 /* RewardsSystemViewController.swift in Sources */,

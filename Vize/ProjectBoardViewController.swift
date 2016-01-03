@@ -10,7 +10,7 @@ import UIKit
 
 class ProjectBoardViewController: UIViewController, UIPageViewControllerDataSource {
      private var pageViewController: UIPageViewController?
-    
+    var projectTopic: String?
     var projectTaskList: [String] = []
     var prepTasks: [String]?
     var progressTasks: [String]?
@@ -84,6 +84,7 @@ class ProjectBoardViewController: UIViewController, UIPageViewControllerDataSour
         }
         
         vc.selectedList = projectTaskList
+        vc.projectTopic = projectTopic!
         
         vc.pageIndex = index
         

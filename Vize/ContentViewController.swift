@@ -7,10 +7,33 @@
 //
 
 import UIKit
+import Firebase
 
-class ContentViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ContentViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
 
-
+    var button: UIButton?
+    var projectTopic: String?
+    var dbHead: String?
+    var projectIndex: String?
+    
+    @IBAction func addTask(sender: AnyObject) {
+        
+        button = sender as? UIButton
+        
+        let addTaskField: UITextField = UITextField(frame: CGRect(x: button!.frame.minX, y: button!.frame.minY, width: button!.frame.width, height: button!.frame.height))
+        addTaskField.placeholder = "Enter Task Description"
+        addTaskField.delegate = self
+        addTaskField.font = UIFont.systemFontOfSize(15)
+        addTaskField.borderStyle = UITextBorderStyle.RoundedRect
+        addTaskField.autocorrectionType = UITextAutocorrectionType.No
+        addTaskField.keyboardType = UIKeyboardType.Default
+        addTaskField.returnKeyType = UIReturnKeyType.Done
+        addTaskField.clearButtonMode = UITextFieldViewMode.WhileEditing;
+        addTaskField.contentVerticalAlignment = UIControlContentVerticalAlignment.Center
+        self.view.addSubview(addTaskField)
+        
+        
+    }
     @IBOutlet weak var projectTaskLabel: UILabel!
     @IBOutlet weak var projectTaskTableView: UITableView!
     var pageIndex: Int!
@@ -27,6 +50,31 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        //call to database to save task
+//        let ref = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com/projects/" + projectTopic!)
+//        
+//        switch labelText{
+//        case "Project Preparation": dbHead = "prepTasks"
+//        case "Tasks in Progress" : dbHead = "progressTasks"
+//        case "Tasks To Complete": dbHead = "tasksLeftToComplete"
+//        case "Done": dbHead = "doneTasks"
+//        default: dbHead = ""
+//            
+//        }
+//        
+//        let tasks: [String] = [textField.text!]
+//        
+//        ref.childByAppendingPath(projectTopic!).childByAppendingPath(projectIndex).childByAppendingPath(dbHead!).setValue(tasks)
+        
+        //uitext field back to button
+        button?.frame = CGRect(x: textField.frame.minX, y: textField.frame.minY, width: textField.frame.width, height: textField.frame.height)
+        self.view.addSubview(button!)
+        
+        textField.resignFirstResponder();
+        return true;
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
