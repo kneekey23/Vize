@@ -61,7 +61,7 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Configure the cell...
             let item = projectList[indexPath.row]
             cell.textLabel?.text = item.title
-            cell.detailTextLabel?.text = "Grade" + item.grade
+            cell.detailTextLabel?.text = "Grade " + item.grade
         
         
         return cell
