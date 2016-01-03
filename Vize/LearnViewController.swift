@@ -67,14 +67,14 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        self.performSegueWithIdentifier("ProjectViewController", sender: listTableView.cellForRowAtIndexPath(indexPath))
+        self.performSegueWithIdentifier("ProjectViewControllerSegue", sender: listTableView.cellForRowAtIndexPath(indexPath))
     }
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
-        if segue.identifier == "ProjectViewController" {
+        if segue.identifier == "ProjectViewControllerSegue" {
             let projectViewController = segue.destinationViewController as! ProjectViewController
             
             //make call to db to load list of projects and populate a project array based off what they selected
@@ -92,6 +92,11 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
                }
                 
             }
+        }
+        
+        if segue.identifier == "logOut"{
+            let loginVC = segue.destinationViewController as! LoginController
+            loginVC.hidesBottomBarWhenPushed = true
         }
         
         

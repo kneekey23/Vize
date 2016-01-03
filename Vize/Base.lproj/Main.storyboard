@@ -45,23 +45,24 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrB-N1-nuE">
-                                <rect key="frame" x="43" y="414" width="298" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <state key="normal" title="Not a user? Create a new Account here"/>
-                                <connections>
-                                    <segue destination="5fU-kR-4Gt" kind="presentation" id="vQb-Bv-M8n"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpa-UK-oUX">
-                                <rect key="frame" x="165" y="376" width="55" height="30"/>
+                                <rect key="frame" x="128" y="376" width="92" height="41"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="oIL-pr-JRS" kind="showDetail" action="showViewController:sender:" id="0y7-9R-mim"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrB-N1-nuE">
+                                <rect key="frame" x="38" y="431" width="298" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Not a user? Create a new Account here"/>
+                                <connections>
+                                    <segue destination="5fU-kR-4Gt" kind="presentation" id="vQb-Bv-M8n"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -271,7 +272,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="9U3-kg-uH4" kind="showDetail" trigger="accessoryAction" id="pRZ-t6-Fgn"/>
+                                            <segue destination="9U3-kg-uH4" kind="push" identifier="ProjectViewControllerSegue" trigger="accessoryAction" id="pRZ-t6-Fgn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -311,7 +312,7 @@
             </objects>
             <point key="canvasLocation" x="2114.5" y="-248.5"/>
         </scene>
-        <!--Project View Controller-->
+        <!--Projects-->
         <scene sceneID="XP4-Uu-73c">
             <objects>
                 <viewController storyboardIdentifier="ProjectViewController" automaticallyAdjustsScrollViewInsets="NO" id="9U3-kg-uH4" customClass="ProjectViewController" customModule="Vize" customModuleProvider="target" sceneMemberID="viewController">
@@ -323,51 +324,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJu-wi-vjX">
-                                <rect key="frame" x="98" y="20" width="166" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d8i-LZ-cGY">
-                                <rect key="frame" x="0.0" y="58" width="375" height="609"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="59" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d8i-LZ-cGY">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="sQg-qb-GX5" detailTextLabel="UnX-Fz-mfB" style="IBUITableViewCellStyleSubtitle" id="65m-48-rs6">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="projectCell" textLabel="sQg-qb-GX5" detailTextLabel="UnX-Fz-mfB" rowHeight="59" style="IBUITableViewCellStyleSubtitle" id="65m-48-rs6">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="59"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="65m-48-rs6" id="B8T-Km-1ye">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="58.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Plant/Cell Functionality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sQg-qb-GX5">
-                                                    <rect key="frame" x="15" y="4" width="167.5" height="21"/>
+                                                    <rect key="frame" x="15" y="12" width="167.5" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Grade 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UnX-Fz-mfB">
-                                                    <rect key="frame" x="15" y="25" width="43" height="14.5"/>
+                                                    <rect key="frame" x="15" y="33" width="43" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="tQJ-Ul-0tS" kind="showDetail" trigger="accessoryAction" id="dZq-g2-EpS"/>
+                                            <segue destination="tQJ-Ul-0tS" kind="show" identifier="ToProjectBoard" trigger="accessoryAction" action="showDetailViewController:sender:" id="dZq-g2-EpS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9U3-kg-uH4" id="4kk-rc-T2Y"/>
+                                    <outlet property="delegate" destination="9U3-kg-uH4" id="tDO-F9-E9p"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Projects" id="nQ0-Ej-p9J"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="projectTableView" destination="d8i-LZ-cGY" id="YBt-x6-797"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K9A-3q-XEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -509,6 +513,24 @@
                     <view key="view" contentMode="scaleToFill" id="uWt-9z-c5Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rWk-li-4z4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Point Redemption" id="0IR-Hz-ByF">
+                                        <barButtonItem key="leftBarButtonItem" title="X" id="DRw-As-5BO">
+                                            <color key="tintColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="closeModal:" destination="865-Lp-ASS" id="Mnm-Ak-RuW"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -530,12 +552,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3G-4G-ajA">
-                                <rect key="frame" x="0.0" y="34" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Point Redemption" id="8fe-K3-Ii9">
+                                    <navigationItem title="Point Redemption Information" id="8fe-K3-Ii9">
                                         <barButtonItem key="leftBarButtonItem" title="X" id="zXt-Of-EMM">
                                             <color key="tintColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
@@ -582,6 +604,6 @@
         <image name="hrline" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="a7W-Uo-Ki7"/>
+        <segue reference="0y7-9R-mim"/>
     </inferredMetricsTieBreakers>
 </document>
