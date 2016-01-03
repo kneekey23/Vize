@@ -8,11 +8,12 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
   
     @IBOutlet weak var projectTableView: UITableView!
-    //var featuredRouteList:Array<DDBTableRow>?
+    var projectTopic: String?
     var lastEvaluatedKey:[NSObject : AnyObject]!
     var  doneLoading = false
     
@@ -26,7 +27,7 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
             projectList = []
         }
       
-        
+              projectTableView.reloadData()
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -37,7 +38,8 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
         if projectList == nil {
             projectList = []
         }
- 
+        //projectTableView.reloadData()
+        refreshData()
         if self.needsToRefresh {
            // self.refreshList(true)
             self.needsToRefresh = false
@@ -53,6 +55,42 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return projectList.count
     }
+    
+    func refreshData(){
+        
+        if projectTopic != nil {
+        
+        let ref = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com/projects/" + projectTopic!)
+        
+        // Attach a closure to read the data
+        ref.observeSingleEventOfType(.Value, withBlock: { snapshot in
+            var projects = [Project]()
+            
+            for item in snapshot.children {
+                let project = Project(snapshot: item as! FDataSnapshot)
+                projects.append(project)
+            }
+            
+            for proj in projects {
+                print(proj.title)
+                print(proj.grade)
+                print(proj.description)
+            }
+            
+            //send selectedSubjectOrCategory to db to get correct project list and popuale. then set it equal to a variable on next view controller.
+            self.projectList = projects
+            
+            
+        self.projectTableView.reloadData()
+            
+            
+            
+            }, withCancelBlock: { error in
+                print(error.description)
+        })
+        }
+        
+    }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         print("in tableView")
@@ -61,7 +99,7 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Configure the cell...
             let item = projectList[indexPath.row]
             cell.textLabel?.text = item.title
-            cell.detailTextLabel?.text = "Grade" + item.grade
+            cell.detailTextLabel?.text = "Grade " + item.grade
         
         
         return cell
@@ -101,6 +139,15 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
                 }
                 
             }
+        }
+        
+        if segue.identifier == "addProjectSegue"{
+              let apViewController = segue.destinationViewController as! AddProjectViewController
+            if(projectList != nil){
+                apViewController.projectCount = String(projectList.count + 1)
+            }
+            
+                apViewController.projectTopic = projectTopic!
         }
         
         

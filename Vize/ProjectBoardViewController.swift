@@ -50,7 +50,7 @@ class ProjectBoardViewController: UIViewController, UIPageViewControllerDataSour
         let appearance = UIPageControl.appearance()
         appearance.pageIndicatorTintColor = UIColor.grayColor()
         appearance.currentPageIndicatorTintColor = UIColor.blackColor()
-        appearance.backgroundColor = UIColor(hexString: "#64D8C4")
+        appearance.backgroundColor = UIColor.clearColor()
     }
 
     override func didReceiveMemoryWarning() {
