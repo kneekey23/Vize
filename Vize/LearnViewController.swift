@@ -16,6 +16,8 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBOutlet weak var listTableView: UITableView!
     
+    let dbref = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com")
+    
     @IBAction func chooseList(sender: AnyObject) {
         
        
@@ -132,7 +134,7 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
         
         if segue.identifier == "logOut"{
-//            ref.unauth()
+            dbref.unauth()
             let loginVC = segue.destinationViewController as! LoginController
             loginVC.hidesBottomBarWhenPushed = true
         }

@@ -19,14 +19,13 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
     var needsToRefresh = true
 
     var projectList: [Project]!
-    //var featuredRouteList: [String] = ["Tourist Route", "Lazy Sunday Route"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if projectList == nil {
             projectList = []
         }
-        projectTableView.reloadData()
+      
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -34,7 +33,11 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        projectTableView.reloadData()
+        
+        if projectList == nil {
+            projectList = []
+        }
+ 
         if self.needsToRefresh {
            // self.refreshList(true)
             self.needsToRefresh = false
@@ -80,21 +83,25 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
-//        if segue.identifier == "ThemedRouteDetailViewController" {
-//            let detailViewController = segue.destinationViewController as! ThemedRouteDetailViewController
-//            if sender != nil {
-//                if (sender!.isKindOfClass(UITableViewCell)) {
-//                    let cell = sender as! UITableViewCell
-//                    
-//                    
-//                    let indexPath = self.featuredRouteTable.indexPathForCell(cell)
-//                    let tableRow = self.featuredRouteList?[indexPath!.row]
-//                    detailViewController.tableRow = tableRow
-//                    
-//                }
-//                
-//            }
-//        }
+        if segue.identifier == "ToProjectBoard" {
+            let bpvViewController = segue.destinationViewController as! ProjectBoardViewController
+            if sender != nil {
+                if (sender!.isKindOfClass(UITableViewCell)) {
+                    let cell = sender as! UITableViewCell
+                    
+                    
+                    let indexPath = self.projectTableView.indexPathForCell(cell)
+                    let tableRow = self.projectList[indexPath!.row]
+                    
+                    bpvViewController.progressTasks = tableRow.progressTasks
+                    bpvViewController.tasksToComplete = tableRow.tasksToComplete
+                    bpvViewController.doneTasks = tableRow.doneTasks
+                    bpvViewController.prepTasks = tableRow.prepTasks
+                    
+                }
+                
+            }
+        }
         
         
         

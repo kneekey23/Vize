@@ -11,7 +11,11 @@ import UIKit
 class ProjectBoardViewController: UIViewController, UIPageViewControllerDataSource {
      private var pageViewController: UIPageViewController?
     
-    var projectTaskList: [String] = ["do test task", "do other test task", "do last task"]
+    var projectTaskList: [String] = []
+    var prepTasks: [String]?
+    var progressTasks: [String]?
+    var tasksToComplete: [String]?
+    var doneTasks: [String]?
     var projectLabelList: [String] = ["Project Preparation", "Tasks in Progress", "Tasks To Complete", "Done"]
 
     
@@ -25,6 +29,9 @@ class ProjectBoardViewController: UIViewController, UIPageViewControllerDataSour
         
         let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("PageController") as! UIPageViewController
         pageController.dataSource = self
+        if prepTasks != nil && prepTasks?.count > 0{
+            projectTaskList = prepTasks!
+        }
         
         if projectLabelList.count > 0 {
             let firstController = viewControllerAtIndex(0)
@@ -65,8 +72,19 @@ class ProjectBoardViewController: UIViewController, UIPageViewControllerDataSour
     
     func viewControllerAtIndex(index: Int) -> ContentViewController{
         let vc: ContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ContentViewController") as! ContentViewController
-        vc.selectedList = projectTaskList
         vc.labelText = self.projectLabelList[index] as String
+        
+        switch vc.labelText{
+            case "Project Preparation": projectTaskList = prepTasks!
+            case "Tasks in Progress" : projectTaskList = progressTasks!
+            case "Tasks To Complete": projectTaskList = tasksToComplete!
+            case "Done": projectTaskList = doneTasks!
+            default: projectTaskList = []
+            
+        }
+        
+        vc.selectedList = projectTaskList
+        
         vc.pageIndex = index
         
         return vc

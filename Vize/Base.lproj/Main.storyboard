@@ -810,6 +810,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="My Rewards" image="Trophy-32" selectedImage="Trophy-32" id="PMX-BO-4T1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="pointCount" destination="TuK-OW-ajK" id="lN4-xI-Kqy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LR7-Zu-2Hg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
