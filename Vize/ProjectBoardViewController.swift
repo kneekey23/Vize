@@ -12,11 +12,11 @@ class ProjectBoardViewController: UIViewController, UIPageViewControllerDataSour
      private var pageViewController: UIPageViewController?
     var projectTopic: String?
     var projectIndex: String?
-    var projectTaskList: [Task] = []
-    var prepTasks: [Task]?
-    var progressTasks: [Task]?
-    var tasksToComplete: [Task]?
-    var doneTasks: [Task]?
+    var projectTaskList: [String] = []
+    var prepTasks: [String]?
+    var progressTasks: [String]?
+    var tasksToComplete: [String]?
+    var doneTasks: [String]?
     var projectLabelList: [String] = ["Project Preparation", "Tasks in Progress", "Tasks To Complete", "Done"]
 
     
