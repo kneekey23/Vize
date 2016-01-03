@@ -22,6 +22,10 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
+                            <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVk-4W-EHr">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jDi-tX-XoO">
                                 <rect key="frame" x="11" y="314" width="353" height="40"/>
                                 <constraints>
@@ -63,8 +67,8 @@
                                     <segue destination="5fU-kR-4Gt" kind="presentation" identifier="createNew" id="vQb-Bv-M8n"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project-based learning with Rewards" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3K-nU-oWK">
-                                <rect key="frame" x="24" y="104" width="326" height="52"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Project-based learning with Rewards" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3K-nU-oWK">
+                                <rect key="frame" x="25" y="104" width="325" height="52"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -104,9 +108,11 @@
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MrB-N1-nuE" secondAttribute="bottom" constant="151" id="4ln-8N-aRA"/>
                             <constraint firstItem="kpa-UK-oUX" firstAttribute="trailing" secondItem="jDi-tX-XoO" secondAttribute="trailing" id="52p-se-Tfc"/>
+                            <constraint firstItem="kVk-4W-EHr" firstAttribute="trailing" secondItem="a9E-EU-910" secondAttribute="trailing" id="696-zL-nz1"/>
                             <constraint firstItem="D3K-nU-oWK" firstAttribute="top" secondItem="hqK-mx-Wxr" secondAttribute="bottom" id="9rA-I4-PC4"/>
                             <constraint firstItem="kpa-UK-oUX" firstAttribute="leading" secondItem="jDi-tX-XoO" secondAttribute="leading" id="A98-9c-fhf"/>
                             <constraint firstItem="hqK-mx-Wxr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="AEB-ta-7Eh"/>
+                            <constraint firstItem="kVk-4W-EHr" firstAttribute="leading" secondItem="a9E-EU-910" secondAttribute="leading" id="APL-N7-f55"/>
                             <constraint firstItem="MrB-N1-nuE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C4w-qD-yi7"/>
                             <constraint firstItem="a9E-EU-910" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="D2g-gc-elY"/>
                             <constraint firstItem="jDi-tX-XoO" firstAttribute="trailing" secondItem="wHe-Dx-KBK" secondAttribute="trailing" id="GFV-3I-PYJ"/>
@@ -116,10 +122,12 @@
                             <constraint firstItem="xZ3-6y-cKY" firstAttribute="top" secondItem="hqK-mx-Wxr" secondAttribute="bottom" constant="66" id="PZm-ul-nTe"/>
                             <constraint firstItem="jDi-tX-XoO" firstAttribute="centerX" secondItem="MrB-N1-nuE" secondAttribute="centerX" id="TeP-3h-8ce"/>
                             <constraint firstItem="a9E-EU-910" firstAttribute="centerX" secondItem="MrB-N1-nuE" secondAttribute="centerX" id="UZF-Wg-iSc"/>
+                            <constraint firstItem="kVk-4W-EHr" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="WLt-qd-xvm"/>
                             <constraint firstItem="xZ3-6y-cKY" firstAttribute="leading" secondItem="HuL-gV-gsD" secondAttribute="leading" id="XZJ-Qv-VpE"/>
                             <constraint firstItem="hqK-mx-Wxr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ygn-K2-V3l"/>
                             <constraint firstItem="jDi-tX-XoO" firstAttribute="top" secondItem="HuL-gV-gsD" secondAttribute="bottom" constant="21" id="YsQ-UP-0LE"/>
-                            <constraint firstItem="D3K-nU-oWK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Zfo-aQ-RcZ"/>
+                            <constraint firstItem="D3K-nU-oWK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="Zfo-aQ-RcZ"/>
+                            <constraint firstItem="kVk-4W-EHr" firstAttribute="top" secondItem="a9E-EU-910" secondAttribute="top" id="aVb-IF-t8L"/>
                             <constraint firstItem="wHe-Dx-KBK" firstAttribute="top" secondItem="xZ3-6y-cKY" secondAttribute="bottom" constant="17" id="b7B-wp-6hT"/>
                             <constraint firstItem="kpa-UK-oUX" firstAttribute="top" secondItem="jDi-tX-XoO" secondAttribute="bottom" constant="22" id="bud-SA-mCq"/>
                             <constraint firstItem="xZ3-6y-cKY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="dUQ-PY-g1a"/>
