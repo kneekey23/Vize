@@ -40,7 +40,7 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
     var labelText: String!
     
     
-    var selectedList: [Task]?
+    var selectedList: [String]?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.projectTaskLabel.text = labelText!
@@ -108,7 +108,7 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Configure the cell...
         if let myTableRows = self.selectedList{
             let item = myTableRows[indexPath.section]
-            cell.textLabel?.text = item.title
+            cell.textLabel?.text = item
         }
         
         return cell
@@ -130,7 +130,7 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
                     
                     let indexPath = self.projectTaskTableView.indexPathForCell(cell)
                     let tableRow = self.selectedList?[indexPath!.row]
-                    taskViewController.taskDescriptionSelected = tableRow?.description
+                    taskViewController.taskDescriptionSelected = tableRow
                     
                 }
                 
