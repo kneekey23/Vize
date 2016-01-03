@@ -1,6 +1,10 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## Firebase
+
+https://www.firebase.com/terms/terms-of-service.html
+
 ## Kandy
 
 Copyright © 2015 GENBAND, Inc. All rights reserved. Kandy™ is a trademark of GENBAND, Inc. Use of this software is subject to the terms and conditions of the GENBAND, Inc. Terms & Conditions located at https://developer.kandy.io/terms-and-conditions
