@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ProjectViewController: UIViewController{
+class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
   
     @IBOutlet weak var projectTableView: UITableView!
     //var featuredRouteList:Array<DDBTableRow>?
@@ -17,6 +17,7 @@ class ProjectViewController: UIViewController{
     var  doneLoading = false
     
     var needsToRefresh = true
+
     var projectList: [Project]!
     //var featuredRouteList: [String] = ["Tourist Route", "Lazy Sunday Route"]
     
@@ -26,7 +27,6 @@ class ProjectViewController: UIViewController{
             projectList = []
         }
         projectTableView.reloadData()
-
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -52,10 +52,10 @@ class ProjectViewController: UIViewController{
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        print("in tableView")
         let cell = tableView.dequeueReusableCellWithIdentifier("projectCell", forIndexPath: indexPath)
         
         // Configure the cell...
-        
             let item = projectList[indexPath.row]
             cell.textLabel?.text = item.title
             cell.detailTextLabel?.text = "Grade" + item.grade
