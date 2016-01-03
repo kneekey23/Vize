@@ -11,4 +11,7 @@ import UIKit
 
 class PointsRedemptionViewController: UIViewController{
     
+    @IBAction func closeModal(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }

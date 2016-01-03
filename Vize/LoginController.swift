@@ -12,6 +12,8 @@ class LoginController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+     self.navigationController?.setNavigationBarHidden(true, animated: true)
+        //self.tabBarController?.hidesBottomBarWhenPushed = true
         // Do any additional setup after loading the view, typically from a nib.
     }
 

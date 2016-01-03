@@ -11,12 +11,14 @@ import UIKit
 
 class ProjectViewController: UIViewController{
   
+    @IBOutlet weak var projectTableView: UITableView!
     //var featuredRouteList:Array<DDBTableRow>?
     var lock:NSLock?
     var lastEvaluatedKey:[NSObject : AnyObject]!
     var  doneLoading = false
     
     var needsToRefresh = true
+    var projectList: [String] = ["Test Project"]
     //var featuredRouteList: [String] = ["Tourist Route", "Lazy Sunday Route"]
     
     override func viewDidLoad() {
@@ -86,31 +88,23 @@ class ProjectViewController: UIViewController{
 //        }
 //    }
     
-//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return (featuredRouteList?.count)!
-//    }
-//    
-//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCellWithIdentifier("featuredRouteCell", forIndexPath: indexPath)
-//        
-//        // Configure the cell...
-//        if let myTableRows = self.featuredRouteList {
-//            let item = myTableRows[indexPath.row]
-//            cell.textLabel?.text = item.routeName!
-//            
-//            if let myDetailTextLabel = cell.detailTextLabel {
-//                myDetailTextLabel.text = "\(item.place1!), \(item.place2!), \(item.place3!                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              )"
-//            }
-//            
-//            if indexPath.row == myTableRows.count - 1 && !self.doneLoading {
-//                self.refreshList(false)
-//            }
-//        }
-//        
-//        
-//        
-//        return cell
-    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return projectList.count
+    }
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("projectCell", forIndexPath: indexPath)
+        
+        // Configure the cell...
+        
+            let item = projectList[indexPath.row]
+            cell.textLabel?.text = item
+            cell.detailTextLabel?.text = "Grade 9"
+        
+        
+        return cell
+}
+
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return NO if you do not want the specified item to be editable.
@@ -120,7 +114,7 @@ class ProjectViewController: UIViewController{
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-       // self.performSegueWithIdentifier("ThemedRouteDetailViewController", sender: featuredRouteTable.cellForRowAtIndexPath(indexPath))
+        self.performSegueWithIdentifier("ToProjectBoard", sender: projectTableView.cellForRowAtIndexPath(indexPath))
     }
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
