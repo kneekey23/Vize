@@ -733,9 +733,12 @@
                                 <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shutterstock_129435569" translatesAutoresizingMaskIntoConstraints="NO" id="c7J-fj-n7l">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="6We-iD-kgT">
                                 <rect key="frame" x="32" y="100" width="311" height="567"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.75" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="projectBoardCell" textLabel="Mpc-1t-1Yj" style="IBUITableViewCellStyleDefault" id="Zqd-qk-A4G">
                                         <rect key="frame" x="0.0" y="50" width="311" height="44"/>
@@ -768,11 +771,14 @@
                         <constraints>
                             <constraint firstItem="6We-iD-kgT" firstAttribute="top" secondItem="V4p-Cm-h3A" secondAttribute="bottom" constant="8" symbolic="YES" id="8Eu-z2-euR"/>
                             <constraint firstItem="6We-iD-kgT" firstAttribute="centerX" secondItem="eyD-Pq-3Fo" secondAttribute="centerX" id="Apb-wv-No3"/>
+                            <constraint firstItem="c7J-fj-n7l" firstAttribute="leading" secondItem="eyD-Pq-3Fo" secondAttribute="leading" id="Nqx-hf-KbV"/>
+                            <constraint firstItem="c7J-fj-n7l" firstAttribute="centerX" secondItem="V4p-Cm-h3A" secondAttribute="centerX" id="V8v-va-JIM"/>
                             <constraint firstItem="6We-iD-kgT" firstAttribute="bottom" secondItem="nMR-UA-VdM" secondAttribute="top" id="dPL-tJ-uge"/>
                             <constraint firstItem="V4p-Cm-h3A" firstAttribute="leading" secondItem="eyD-Pq-3Fo" secondAttribute="leadingMargin" constant="12" id="fHI-V5-8ak"/>
                             <constraint firstAttribute="trailingMargin" secondItem="V4p-Cm-h3A" secondAttribute="trailing" constant="12" id="jKp-86-ILw"/>
                             <constraint firstItem="V4p-Cm-h3A" firstAttribute="top" secondItem="dRF-RY-BtD" secondAttribute="bottom" constant="22" id="jXm-LZ-z7C"/>
                             <constraint firstItem="6We-iD-kgT" firstAttribute="leading" secondItem="eyD-Pq-3Fo" secondAttribute="leadingMargin" constant="16" id="pKo-CC-iad"/>
+                            <constraint firstItem="c7J-fj-n7l" firstAttribute="bottom" secondItem="nMR-UA-VdM" secondAttribute="top" id="wIX-hp-R6K"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -1229,6 +1235,6 @@
         <image name="shutterstock_129435569" width="1000" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="W3q-C6-j8h"/>
+        <segue reference="0y7-9R-mim"/>
     </inferredMetricsTieBreakers>
 </document>
