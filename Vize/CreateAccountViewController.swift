@@ -13,7 +13,7 @@ import Firebase
 class CreateAccountViewController: UIViewController, UITextFieldDelegate{
     
      let ref = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com")
-    
+    var auth: Bool = false
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var school: UITextField!
@@ -23,6 +23,28 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate{
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func createAccount(sender: AnyObject) {
+        
+        ref.createUser(userName.text!, password: password.text!,
+            withValueCompletionBlock: { error, result in
+                if error != nil {
+                    // There was an error creating the account
+                    self.DisplayErrorAlert("")
+                } else {
+                    let uid = result["uid"] as? String
+                    print("Successfully created user account with uid: \(uid)")
+                    self.auth = true
+                    
+                    let saveRef = Firebase(url:"https://brilliant-inferno-3353.firebaseio.com/userData")
+                    let userData = ["name": self.fullName.text!, "nameOfSchool": self.school.text!, "points": "0", "tasks": [], "role": self.userRole.text!]
+                    saveRef.childByAppendingPath(uid).setValue(userData)
+                    
+                     self.performSegueWithIdentifier("createAccountSuccess", sender: nil)
+                    
+                }
+        })
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         school.delegate = self
@@ -33,51 +55,38 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate{
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-         if segue.identifier == "ToSurveySegue"{
-            
-            //create account in db
-            
-            ref.authUser(userName.text!, password:password.text!) {
-                error, authData in
-                if error != nil {
-                    // Something went wrong. :(
-                } else {
-                    // Authentication just completed successfully :)
-                    
-                    // The logged in user's unique identifier
-                    print(authData.uid)
-                    
-                    // Create a new user dictionary accessing the user's info
-                    // provided by the authData parameter
-                    let newUser = [
-                        "provider": authData.provider,
-                        "displayName": authData.providerData["displayName"] as? NSString as? String
-                    ]
-                    
-                    // Create a child path with a key set to the uid underneath the "users" node
-                    // This creates a URL path like the following:
-                    //  - https://<YOUR-FIREBASE-APP>.firebaseio.com/users/<uid>
-                    self.ref.childByAppendingPath("users")
-                        .childByAppendingPath(authData.uid).setValue(newUser)
-                    
-                    let saveRef = Firebase(url:"https://brilliant-inferno-3353.firebaseio.com/userData")
-                    let userData = ["name": self.fullName.text!, "nameOfSchool": self.school.text!, "points": "0", "tasks": [], "role": self.userRole.text!]
-                    saveRef.childByAppendingPath(authData.uid).setValue(userData)
-                }
-            }
-            
-         }
-         else{
-            let LVC = segue.destinationViewController as! MainViewController
-            LVC.navigationItem.hidesBackButton = true
-        }
-        
+
+        let LVC = segue.destinationViewController as! MainViewController
+        //LVC.tabBarController?.
      
+    }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
+        
+        
+        return auth
     }
     
     //adds the ability to get rid of they keyboard for any text field on return.NJK
     func textFieldShouldReturn(textField: UITextField) -> Bool{
         textField.resignFirstResponder()
         return true;
+    }
+    
+    func DisplayErrorAlert(var errorMessage: String)
+    {
+        if(errorMessage.isEmpty){
+            errorMessage = "We weren't able to create an account for you. Please try again."
+        }
+        
+        let alertController = UIAlertController(title: "Error", message: errorMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let tryAgainAction = UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default, handler: {(alertAction: UIAlertAction!) in
+            //self.navigationController?.popToRootViewControllerAnimated(true)
+        })
+        alertController.addAction(tryAgainAction)
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+        
     }
 }
