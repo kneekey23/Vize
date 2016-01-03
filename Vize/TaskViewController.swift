@@ -49,7 +49,7 @@ class TaskViewController: UIViewController, UITextViewDelegate {
                 // user authenticated
                 print(authData)
                 
-                let userUrl = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com/users/" + authData.uid)
+                let userUrl = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com/userData/" + authData.uid)
                 
                 
                 userUrl.observeSingleEventOfType(.Value, withBlock: { snapshot in

@@ -88,18 +88,7 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
                     
                     let indexPath = self.listTableView.indexPathForCell(cell)
                    let selectedSubjectOrCategory = self.selectedList?[indexPath!.row].lowercaseString
-                    
-                    
-//                    let saveRef = Firebase(url:"https://brilliant-inferno-3353.firebaseio.com/projects")
-//                    let biologyProjectOne = ["title": "Plant Cell Development", "description": "This is the description for this project", "grade": "10"]
-//                    let biologyProjectTwo = ["title": "Osmosis", "description": "This is the description for this project", "grade": "7"]
-//
-//                    var projRef = saveRef.childByAppendingPath("biology")
-//                    
-//                    var biologyProjects = ["0": biologyProjectOne, "1": biologyProjectTwo]
-//                    projRef.setValue(biologyProjects)
-
-                    // Get a reference to our db endpoint
+                
 
                     let ref = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com/projects/" + selectedSubjectOrCategory!)
 
@@ -120,8 +109,13 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
                         
                         //send selectedSubjectOrCategory to db to get correct project list and popuale. then set it equal to a variable on next view controller.
                         projectViewController.projectList = projects
-
-                        projectViewController.projectTableView.reloadData()
+                        
+                        
+                        projectViewController.projectTopic = selectedSubjectOrCategory
+                        if(projectViewController.projectTableView != nil){
+                             projectViewController.projectTableView.reloadData()
+                        }
+                       
 
                         }, withCancelBlock: { error in
                             print(error.description)
