@@ -7,352 +7,518 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E579FF358AF2261C8682A7FA383EAA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		B991A49F4C12A4F8462C02B69D83DB11 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		012A7E018F3D34F159894EBD7EACACF9 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA1E06B698DD235C2EDCD13FE3FA145 /* Empty.m */; };
+		0D9B1521BB2ECBC0B0471D39979E7F87 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
+		191DE2EB9A35585AE0A88BA9F833A1F4 /* FTransactionResult.h in Headers */ = {isa = PBXBuildFile; fileRef = D1C5C5B6FC00B84F59D85949E577A997 /* FTransactionResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C04A7CD5B70C4561F6D98C882731C65 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6204446BD9150A17B12E81B4A6F9CA8 /* Security.framework */; };
+		1C3EF85CD30E6FF2E51471BD5B3CEB29 /* Firebase.h in Headers */ = {isa = PBXBuildFile; fileRef = CD60D80F6A53A28272E627EFB11990D2 /* Firebase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D925BB011B04DDED982C7946571A67A /* FAuthType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFD96EEA0F5B6B7A50F99BE423EE676 /* FAuthType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D9D7FF5237C8CC91EF58DC45AC274FB /* Firebase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C66B8590BD4385380DD8DEAC6D1DB261 /* Firebase-dummy.m */; };
+		22C198A709D2CAD904E0E799AF687902 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		239B10F388840841389B7F09648735B1 /* FEventType.h in Headers */ = {isa = PBXBuildFile; fileRef = BC8BA0BD29DF42999E77554DF406A4D7 /* FEventType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F1496011DBBB75777645194AAAFE92D /* FirebaseApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 9835A31E592632A4040FF54CEFC64986 /* FirebaseApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B0EFAAA29109D9A705A27EFFA10FAE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */; };
+		4D75CF0089B20355B17A851513C4A002 /* FQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B9CC73452564AF9A57E60B8D967F41B /* FQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60F9139BDD38565B78214C4FC5F5729D /* Firebase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5D104FB17FE671CB08264058133DF51 /* Firebase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6646DA26298257396C7FFE141BB84CC3 /* FirebaseServerValue.h in Headers */ = {isa = PBXBuildFile; fileRef = A9083840D67725157FA007F8E4CC2F26 /* FirebaseServerValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C23FCF31260D47CEC1494A292DAA1A1E /* FAuthData.h in Headers */ = {isa = PBXBuildFile; fileRef = 927408B82EC0646ABCC2C71FB53B3FBA /* FAuthData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB05A9DD8244D10C28B6915C514AE15F /* FMutableData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C09C98455069914C32DA9FA5AC47F62 /* FMutableData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1A883FEBDEED9B85D90D6BE2080F218 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6166BE40C18BC6BF0EED92CAB212EC33 /* SystemConfiguration.framework */; };
+		E3FBB5B462A14E8ACC9B340227DE4BE1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F85758B54CB0D843A3E97DFFB2F21F /* CFNetwork.framework */; };
+		E60FA42EEC3ECC48701DB55986D25D69 /* FConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD7456EDF3ABFF04E1670342755463C /* FConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8B534D15D2B25919ACD898217266891 /* FDataSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C06FC2F78175B0DA7E5F6EBCC0FBB84 /* FDataSnapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9C3D34A5EA5946DEDC3B3AC14411B58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8E529488D77F87806DD2D31EFC9C26B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7AC9326D819482593FE118E915409D7;
+			remoteInfo = Firebase;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0249C6F9E340C22C8E11645A6522476B /* KandySessionManagement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySessionManagement.h; path = KandySDK.framework/Versions/A/Headers/KandySessionManagement.h; sourceTree = "<group>"; };
-		02736999D45E3779FD523D877076A96B /* KandyCallTerminationReasonProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallTerminationReasonProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyCallTerminationReasonProtocol.h; sourceTree = "<group>"; };
-		0930BFD7DB15188B26CB373BC2DC7C4D /* KandyFileItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyFileItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyFileItemProtocol.h; sourceTree = "<group>"; };
-		0CCA85FB647EEC2229F98607517E95C4 /* KandyGroupUpdated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupUpdated.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupUpdated.h; sourceTree = "<group>"; };
-		0F0A96BE950EF42549FC7EF34B75278E /* KandyAreaCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyAreaCode.h; path = KandySDK.framework/Versions/A/Headers/KandyAreaCode.h; sourceTree = "<group>"; };
-		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		118E34F29B0995FE1D0FDAA20C857867 /* KandyContactsService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactsService.h; path = KandySDK.framework/Versions/A/Headers/KandyContactsService.h; sourceTree = "<group>"; };
-		15313E8FDD3DAA109CB654A27DD79043 /* KandyVideoItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyVideoItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyVideoItemProtocol.h; sourceTree = "<group>"; };
-		16F56D4E3156040D7432ACC6266F8EC6 /* KandyPhoneContactRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPhoneContactRecord.h; path = KandySDK.framework/Versions/A/Headers/KandyPhoneContactRecord.h; sourceTree = "<group>"; };
-		1B61810588A292EDF32791342263174E /* KandyContactsServiceNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactsServiceNotificationDelegate.h; path = KandySDK.framework/Versions/A/Headers/KandyContactsServiceNotificationDelegate.h; sourceTree = "<group>"; };
-		1B747C45968ED3D0E12FAB18DE398EFF /* KandyChatServiceSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyChatServiceSettings.h; path = KandySDK.framework/Versions/A/Headers/KandyChatServiceSettings.h; sourceTree = "<group>"; };
-		1C76E36C59AB8D7B1A9D74940D2C04FE /* KandyDeliveryAck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyDeliveryAck.h; path = KandySDK.framework/Versions/A/Headers/KandyDeliveryAck.h; sourceTree = "<group>"; };
-		1DF83263301D3E2B2451E09D33826ECF /* KandyGroupParticipantLeft.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupParticipantLeft.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupParticipantLeft.h; sourceTree = "<group>"; };
-		1F61157479229783D9E98F523BE6EBAA /* KandyVideoCompressionSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyVideoCompressionSettings.h; path = KandySDK.framework/Versions/A/Headers/KandyVideoCompressionSettings.h; sourceTree = "<group>"; };
-		219F6366BC13E1FE3761067CCEAFCB35 /* KandyLocationParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLocationParams.h; path = KandySDK.framework/Versions/A/Headers/KandyLocationParams.h; sourceTree = "<group>"; };
-		24D9232E75127B32A987C4A885995249 /* KandyMediaUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyMediaUtils.h; path = KandySDK.framework/Versions/A/Headers/KandyMediaUtils.h; sourceTree = "<group>"; };
-		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		2B7B0B855CBBB52C3FA8BCD9EFEF003F /* KandyServices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyServices.h; path = KandySDK.framework/Versions/A/Headers/KandyServices.h; sourceTree = "<group>"; };
-		36BE2AA8662676140067CB8134688C0C /* KandyLocationServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLocationServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyLocationServiceEnums.h; sourceTree = "<group>"; };
-		36E6241C1B63AD9619D79EB15D5205FA /* KandyContactRecordProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactRecordProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyContactRecordProtocol.h; sourceTree = "<group>"; };
-		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		38D86381A4F301AFCE79D61ADA170CDB /* KandyCloudStorageService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCloudStorageService.h; path = KandySDK.framework/Versions/A/Headers/KandyCloudStorageService.h; sourceTree = "<group>"; };
-		3B2A2FCCD2F34AEC9CF36ACA0EA59B87 /* Kandy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kandy.h; path = KandySDK.framework/Versions/A/Headers/Kandy.h; sourceTree = "<group>"; };
-		3E29E32218B4BB58AF96144B591FC8C9 /* KandyPendingIncomingCallEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPendingIncomingCallEvent.h; path = KandySDK.framework/Versions/A/Headers/KandyPendingIncomingCallEvent.h; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3F208CC564D0AA729440C5ACF2312319 /* KandyAccessNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyAccessNotificationDelegate.h; path = KandySDK.framework/Versions/A/Headers/KandyAccessNotificationDelegate.h; sourceTree = "<group>"; };
-		41B2AB483CD664FFDFDF276123F4146E /* KandyMissedCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyMissedCall.h; path = KandySDK.framework/Versions/A/Headers/KandyMissedCall.h; sourceTree = "<group>"; };
-		44A6B81B0295325439A6F2F390C1B04F /* KandyGroupService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupService.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupService.h; sourceTree = "<group>"; };
-		458659B0237DDB089224F7787C229E9C /* KandyLocationServiceSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLocationServiceSettings.h; path = KandySDK.framework/Versions/A/Headers/KandyLocationServiceSettings.h; sourceTree = "<group>"; };
-		477A70CEDC3F6FA4D5E13191D990DB7D /* KandyProfileService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyProfileService.h; path = KandySDK.framework/Versions/A/Headers/KandyProfileService.h; sourceTree = "<group>"; };
-		47E5D12743ED5DCA64735EF332885965 /* KandyDeviceProfileProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyDeviceProfileProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyDeviceProfileProtocol.h; sourceTree = "<group>"; };
-		491ABE00D8540DED1DE12C02D87F6D28 /* KandySignupServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySignupServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandySignupServiceEnums.h; sourceTree = "<group>"; };
-		49A1BF797AE65532F9F5AB5E23A141D3 /* KandyCallActivityDataRetrievalDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallActivityDataRetrievalDelegate.h; path = KandySDK.framework/Versions/A/Headers/KandyCallActivityDataRetrievalDelegate.h; sourceTree = "<group>"; };
-		4BB008A2D84BA8648A341AEF8B93185C /* KandyGroupParticipant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupParticipant.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupParticipant.h; sourceTree = "<group>"; };
-		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		51423E0E5E113DF0E4234ABC0A2393B1 /* KandyUserParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyUserParams.h; path = KandySDK.framework/Versions/A/Headers/KandyUserParams.h; sourceTree = "<group>"; };
-		526C50C881302921E1033E974552C05D /* KandyAudioItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyAudioItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyAudioItemProtocol.h; sourceTree = "<group>"; };
-		5563BE849DA51316E750A67EC50E7316 /* KandyAccess.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyAccess.h; path = KandySDK.framework/Versions/A/Headers/KandyAccess.h; sourceTree = "<group>"; };
-		57850EF5E51DF0F64FF74270A294010F /* KandyBillingPackage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyBillingPackage.h; path = KandySDK.framework/Versions/A/Headers/KandyBillingPackage.h; sourceTree = "<group>"; };
-		580D2F68D4D8EB395A9A82C1F6D96806 /* KandyProfileServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyProfileServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyProfileServiceEnums.h; sourceTree = "<group>"; };
-		58AFA2A482FA5E226F83E68337180713 /* KandyChatServiceNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyChatServiceNotificationDelegate.h; path = KandySDK.framework/Versions/A/Headers/KandyChatServiceNotificationDelegate.h; sourceTree = "<group>"; };
-		5BE8021B86FEFE93FA5BE4DA0E4D44C9 /* KandySDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySDK.h; path = KandySDK.framework/Versions/A/Headers/KandySDK.h; sourceTree = "<group>"; };
-		5C0A42D4C497B052875979EF224AEFA8 /* KandyGroupCoreServiceProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupCoreServiceProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupCoreServiceProtocol.h; sourceTree = "<group>"; };
-		5C61AEC78E45D3DBF2194E1B70E29878 /* KandyIncomingCallProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyIncomingCallProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyIncomingCallProtocol.h; sourceTree = "<group>"; };
-		5D1138E30AC48835D35AE9141A736F13 /* KandyGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroup.h; path = KandySDK.framework/Versions/A/Headers/KandyGroup.h; sourceTree = "<group>"; };
-		5F97E19FCC35CAC9E2ADA9AB165D1F70 /* KandyGroupDestroyed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupDestroyed.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupDestroyed.h; sourceTree = "<group>"; };
-		6246EF93E6AAE65DA93528CE258B4FB6 /* KandySocialProfileContactRecordProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySocialProfileContactRecordProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandySocialProfileContactRecordProtocol.h; sourceTree = "<group>"; };
-		6408901611A88832371A4DAB1525D75D /* KandyCallServiceNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallServiceNotificationDelegate.h; path = KandySDK.framework/Versions/A/Headers/KandyCallServiceNotificationDelegate.h; sourceTree = "<group>"; };
-		65808D23530DC2DE3FB4EB16A051CA21 /* KandyAddressContactRecordProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyAddressContactRecordProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyAddressContactRecordProtocol.h; sourceTree = "<group>"; };
-		66FEC49F948590AC27D10847A2517B54 /* KandySession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySession.h; path = KandySDK.framework/Versions/A/Headers/KandySession.h; sourceTree = "<group>"; };
-		67C0FEF5F451C267AC5C78BE5E0BB768 /* KandyCallServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyCallServiceEnums.h; sourceTree = "<group>"; };
-		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		6983220164A998DD3E11D1CAF1B099B4 /* KandyChatMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyChatMessage.h; path = KandySDK.framework/Versions/A/Headers/KandyChatMessage.h; sourceTree = "<group>"; };
-		69E18D8B5BEDDDF65F0AD5FC478142DD /* KandyContactsServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactsServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyContactsServiceEnums.h; sourceTree = "<group>"; };
-		6B68C6A46B08F166CD65FFFD906798FF /* KandyCustomItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCustomItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyCustomItemProtocol.h; sourceTree = "<group>"; };
-		6DA65797043A2C4456FEED139C3ADB17 /* KandyTransferProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyTransferProgress.h; path = KandySDK.framework/Versions/A/Headers/KandyTransferProgress.h; sourceTree = "<group>"; };
-		70C592ED153313603197C031F17BB636 /* KandyGroup+Actions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "KandyGroup+Actions.h"; path = "KandySDK.framework/Versions/A/Headers/KandyGroup+Actions.h"; sourceTree = "<group>"; };
-		70E41E71F23D482405039BF96D424D25 /* KandyContactItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyContactItemProtocol.h; sourceTree = "<group>"; };
-		7194AD9F3245941212697C716FD68CC3 /* KandyPhoneContactRecordProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPhoneContactRecordProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyPhoneContactRecordProtocol.h; sourceTree = "<group>"; };
-		740E73DE500FAF3A9DD9078DD35C06C0 /* KandyGroupServiceSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupServiceSettings.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupServiceSettings.h; sourceTree = "<group>"; };
-		7656E82F3F182F03E47F193CD595A4B5 /* KandyGlobalSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGlobalSettings.h; path = KandySDK.framework/Versions/A/Headers/KandyGlobalSettings.h; sourceTree = "<group>"; };
-		78EBDAF3252D40126B6A0D206C120D74 /* KandyPresenceServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPresenceServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyPresenceServiceEnums.h; sourceTree = "<group>"; };
-		7B0F9A899DB829A409A0545F95F05BC2 /* KandyMDLInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyMDLInfo.h; path = KandySDK.framework/Versions/A/Headers/KandyMDLInfo.h; sourceTree = "<group>"; };
-		83A31DE2293495011450EA7F656F3C63 /* KandyMessageBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyMessageBuilder.h; path = KandySDK.framework/Versions/A/Headers/KandyMessageBuilder.h; sourceTree = "<group>"; };
-		84B1064D34473BC00BE656A198ADCE9A /* KandySignupServiceSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySignupServiceSettings.h; path = KandySDK.framework/Versions/A/Headers/KandySignupServiceSettings.h; sourceTree = "<group>"; };
-		856D16A3263C427728B245D8F52C4A46 /* KandyLoggingFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLoggingFormatter.h; path = KandySDK.framework/Versions/A/Headers/KandyLoggingFormatter.h; sourceTree = "<group>"; };
-		865B31E3AAD35CE8AED2CF0EF6C43227 /* KandyLoggingFormatterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLoggingFormatterProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyLoggingFormatterProtocol.h; sourceTree = "<group>"; };
-		874A17E2AB166BC2901540A1B892FBD5 /* KandyTextItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyTextItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyTextItemProtocol.h; sourceTree = "<group>"; };
-		878448309703F3F1F528E218631BD86C /* KandyPresenceServiceNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPresenceServiceNotificationDelegate.h; path = KandySDK.framework/Versions/A/Headers/KandyPresenceServiceNotificationDelegate.h; sourceTree = "<group>"; };
-		8883971291DFC56664D52BBE433F203E /* KandyRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyRecord.h; path = KandySDK.framework/Versions/A/Headers/KandyRecord.h; sourceTree = "<group>"; };
-		88BC879246FDB184D2BD1515AACFF061 /* KandyUserProvisionInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyUserProvisionInfo.h; path = KandySDK.framework/Versions/A/Headers/KandyUserProvisionInfo.h; sourceTree = "<group>"; };
-		8AFA048D3B7FC347C9BC1941894C68D2 /* KandyCloudStorageServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCloudStorageServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyCloudStorageServiceEnums.h; sourceTree = "<group>"; };
-		8DBF0947B01F2356A5C49940D76CBD7A /* KandySocialProfileContactRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySocialProfileContactRecord.h; path = KandySDK.framework/Versions/A/Headers/KandySocialProfileContactRecord.h; sourceTree = "<group>"; };
-		8E9FB43487A384AA71F21FEE8048BD03 /* KandyContactParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactParams.h; path = KandySDK.framework/Versions/A/Headers/KandyContactParams.h; sourceTree = "<group>"; };
-		908F9CDE7DB42872F4812367C19B70D1 /* KandyMessageProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyMessageProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyMessageProtocol.h; sourceTree = "<group>"; };
-		915D17F96C854DD5F52A34A0225D1EAC /* KandyEventProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyEventProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyEventProtocol.h; sourceTree = "<group>"; };
-		916B4C235E4ED179080125325056E52C /* KandyGroupParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupParams.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupParams.h; sourceTree = "<group>"; };
-		95A08EE079248001B7A5D081F50DB20E /* KandyLoggerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLoggerProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyLoggerProtocol.h; sourceTree = "<group>"; };
-		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		9A09B35902FB5AA6290B2606F5E76380 /* KandyServiceErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyServiceErrors.h; path = KandySDK.framework/Versions/A/Headers/KandyServiceErrors.h; sourceTree = "<group>"; };
-		9AB2BCA18FD23351B1702295DB5E3B6F /* KandyEmailContactRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyEmailContactRecord.h; path = KandySDK.framework/Versions/A/Headers/KandyEmailContactRecord.h; sourceTree = "<group>"; };
-		9EE1DD4DCE9A5319FABECE78C8537F8E /* KandyChatServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyChatServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyChatServiceEnums.h; sourceTree = "<group>"; };
-		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		A1D0EAE8B728D8D64382DE9D0DBAA974 /* KandyGroupServiceNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupServiceNotificationDelegate.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupServiceNotificationDelegate.h; sourceTree = "<group>"; };
-		A3B219C95C5FF44D394916BD86DE9C0F /* KandySMSMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySMSMessage.h; path = KandySDK.framework/Versions/A/Headers/KandySMSMessage.h; sourceTree = "<group>"; };
-		A552A5E9B75E5ECF7F4F94E0C00A2C68 /* KandyAccessSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyAccessSettings.h; path = KandySDK.framework/Versions/A/Headers/KandyAccessSettings.h; sourceTree = "<group>"; };
-		AD539BB04A91957D6F2ACB559B025AB7 /* KandyCallServiceSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallServiceSettings.h; path = KandySDK.framework/Versions/A/Headers/KandyCallServiceSettings.h; sourceTree = "<group>"; };
-		AFB8DB6E90E005EB92DD19087E29B2D7 /* KandyMediaItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyMediaItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyMediaItemProtocol.h; sourceTree = "<group>"; };
-		B4A18E233BE8B53B679BA6B4833ABEF3 /* KandyCallParticipantProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallParticipantProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyCallParticipantProtocol.h; sourceTree = "<group>"; };
-		B571E59201476F5030ACE08FC57B706C /* KandyCallProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyCallProtocol.h; sourceTree = "<group>"; };
-		B8D2D738B2EEEBB20B9C43DDCFA914A0 /* KandyBillingService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyBillingService.h; path = KandySDK.framework/Versions/A/Headers/KandyBillingService.h; sourceTree = "<group>"; };
+		02071C25D4521A4316209BCED4D4DF9A /* KandyLoggingFormatterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLoggingFormatterProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyLoggingFormatterProtocol.h; sourceTree = "<group>"; };
+		04E09F9077BFD1FB6FF975625D83F6AF /* KandyDeviceProfileParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyDeviceProfileParams.h; path = KandySDK.framework/Versions/A/Headers/KandyDeviceProfileParams.h; sourceTree = "<group>"; };
+		052E45B449FCDA68087260D4A7BF6381 /* libFirebaseStatic.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libFirebaseStatic.a; sourceTree = "<group>"; };
+		05502083E4F82B4BB75917763E433EDB /* Kandy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kandy.h; path = KandySDK.framework/Versions/A/Headers/Kandy.h; sourceTree = "<group>"; };
+		0ADB2EF251DE627F9BF772D54285635F /* KandyLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLogger.h; path = KandySDK.framework/Versions/A/Headers/KandyLogger.h; sourceTree = "<group>"; };
+		0D0EE9875C50C9F43289A59339566B18 /* KandyServices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyServices.h; path = KandySDK.framework/Versions/A/Headers/KandyServices.h; sourceTree = "<group>"; };
+		0DBD4811B74B0F4501AAACA4781E1710 /* KandyEmailContactRecordProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyEmailContactRecordProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyEmailContactRecordProtocol.h; sourceTree = "<group>"; };
+		0DEE5E04AB53F4424694D020F1182DCF /* KandyBillingPackage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyBillingPackage.h; path = KandySDK.framework/Versions/A/Headers/KandyBillingPackage.h; sourceTree = "<group>"; };
+		0FD3D1A0FE6E37BDF9F108D245C81414 /* KandyGroupDownloadPathBuilderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupDownloadPathBuilderProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupDownloadPathBuilderProtocol.h; sourceTree = "<group>"; };
+		12649165A0CAD8DA25F043A001926397 /* KandySDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySDK.h; path = KandySDK.framework/Versions/A/Headers/KandySDK.h; sourceTree = "<group>"; };
+		12AE44AFCD888E3E9106C08C5B865230 /* KandyProfileServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyProfileServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyProfileServiceEnums.h; sourceTree = "<group>"; };
+		154BABED60F9B5A1101DCD1964E7B60A /* KandyCallProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyCallProtocol.h; sourceTree = "<group>"; };
+		18E84F2BBC9F4117695DBC43598CD547 /* KandyVideoItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyVideoItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyVideoItemProtocol.h; sourceTree = "<group>"; };
+		1979E6F67669211D7743DA1184AE018E /* KandyLoggingFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLoggingFormatter.h; path = KandySDK.framework/Versions/A/Headers/KandyLoggingFormatter.h; sourceTree = "<group>"; };
+		1CC6979EE26B6DA20FC7FA4137F62D10 /* KandyPendingVoiceMail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPendingVoiceMail.h; path = KandySDK.framework/Versions/A/Headers/KandyPendingVoiceMail.h; sourceTree = "<group>"; };
+		1DFD96EEA0F5B6B7A50F99BE423EE676 /* FAuthType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FAuthType.h; sourceTree = "<group>"; };
+		26696FE9959C9D6BEEECA4AB882E126B /* KandyContactProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyContactProtocol.h; sourceTree = "<group>"; };
+		2B016B56ACAB48E739195979203240F2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		2D39003FC5DA464405B45FA72A6EB051 /* KandyChatServiceNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyChatServiceNotificationDelegate.h; path = KandySDK.framework/Versions/A/Headers/KandyChatServiceNotificationDelegate.h; sourceTree = "<group>"; };
+		33DF16DCB55920EB8E4484CDCA1DFDF8 /* KandyTransferProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyTransferProgress.h; path = KandySDK.framework/Versions/A/Headers/KandyTransferProgress.h; sourceTree = "<group>"; };
+		351923A4EE84341C4B0525001590EF72 /* KandyAddressContactRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyAddressContactRecord.h; path = KandySDK.framework/Versions/A/Headers/KandyAddressContactRecord.h; sourceTree = "<group>"; };
+		351AFC88459A4F24E567108B65442FDB /* KandySocialProfileContactRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySocialProfileContactRecord.h; path = KandySDK.framework/Versions/A/Headers/KandySocialProfileContactRecord.h; sourceTree = "<group>"; };
+		3CEFB5863048A2E8A05D821F9894901E /* KandyGroupUpdated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupUpdated.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupUpdated.h; sourceTree = "<group>"; };
+		43375225B7D9004170BD584A0B6F439C /* KandyEmailContactRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyEmailContactRecord.h; path = KandySDK.framework/Versions/A/Headers/KandyEmailContactRecord.h; sourceTree = "<group>"; };
+		448551E85FE6891F8E0C555E46DC53EF /* KandyCallServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyCallServiceEnums.h; sourceTree = "<group>"; };
+		46675A84EB03A78CB0356234542FA7C7 /* KandyContactsServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactsServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyContactsServiceEnums.h; sourceTree = "<group>"; };
+		4797F1448EE47B49DE632B1CD284DE8B /* KandyPhoneContactRecordProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPhoneContactRecordProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyPhoneContactRecordProtocol.h; sourceTree = "<group>"; };
+		47EB947C41AC061D7A7489AA149A8CDC /* KandyProfileService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyProfileService.h; path = KandySDK.framework/Versions/A/Headers/KandyProfileService.h; sourceTree = "<group>"; };
+		49980837BFE5489972DCB535F30693A5 /* Firebase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Firebase-prefix.pch"; sourceTree = "<group>"; };
+		49F4494CAB59B115BDC09880DD1FA5F1 /* KandySession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySession.h; path = KandySDK.framework/Versions/A/Headers/KandySession.h; sourceTree = "<group>"; };
+		4DBE60F77314AD0BA1600B935FD0C94B /* KandyUserProvisionInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyUserProvisionInfo.h; path = KandySDK.framework/Versions/A/Headers/KandyUserProvisionInfo.h; sourceTree = "<group>"; };
+		4FC7166985DDB95B64A3ABC13CC5C9FB /* KandyGroupDestroyed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupDestroyed.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupDestroyed.h; sourceTree = "<group>"; };
+		4FCA806D1E00AE5CA15AF2854AEE5EE9 /* KandyPresenceServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPresenceServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyPresenceServiceEnums.h; sourceTree = "<group>"; };
+		4FDC087AEFBD21C1EEA2D4BB8AE1ED52 /* KandyDeviceProfileProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyDeviceProfileProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyDeviceProfileProtocol.h; sourceTree = "<group>"; };
+		506546AD502930B0A3CE317CA3707C93 /* KandyGroupService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupService.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupService.h; sourceTree = "<group>"; };
+		512B8AB2D59D1836F80403B12E6A7432 /* KandyIncomingCallProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyIncomingCallProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyIncomingCallProtocol.h; sourceTree = "<group>"; };
+		536E2A5A14E3587D19E5C64799A887B2 /* KandyGroupParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupParams.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupParams.h; sourceTree = "<group>"; };
+		56DDFE428EC5CA0E6253912B64D6F800 /* KandyCallActivityRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallActivityRecord.h; path = KandySDK.framework/Versions/A/Headers/KandyCallActivityRecord.h; sourceTree = "<group>"; };
+		5772E66DFEA137D33A6021AE81D33007 /* KandyAudioItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyAudioItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyAudioItemProtocol.h; sourceTree = "<group>"; };
+		5830D54BA0C99A6AFA61FB5FD0E1EB52 /* KandyTextItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyTextItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyTextItemProtocol.h; sourceTree = "<group>"; };
+		584E0362287E496366FCF0A1D70CBB41 /* KandyMissedCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyMissedCall.h; path = KandySDK.framework/Versions/A/Headers/KandyMissedCall.h; sourceTree = "<group>"; };
+		595CFAEE79EBFAA233E39E4F9827B053 /* KandyDomain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyDomain.h; path = KandySDK.framework/Versions/A/Headers/KandyDomain.h; sourceTree = "<group>"; };
+		5ADDA5D3512972FF7D770B4AE82875A4 /* KandyLocationServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLocationServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyLocationServiceEnums.h; sourceTree = "<group>"; };
+		603C9BD138EB580B9D22BAA9BE970DCB /* KandyGroupServiceNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupServiceNotificationDelegate.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupServiceNotificationDelegate.h; sourceTree = "<group>"; };
+		60F85758B54CB0D843A3E97DFFB2F21F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		6166BE40C18BC6BF0EED92CAB212EC33 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		626B55AA3869AAC1CCF6DC4DB6D9B820 /* KandyCallServiceSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallServiceSettings.h; path = KandySDK.framework/Versions/A/Headers/KandyCallServiceSettings.h; sourceTree = "<group>"; };
+		65CC2F1A3F067F540D010DE5045D0CF1 /* KandyChatService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyChatService.h; path = KandySDK.framework/Versions/A/Headers/KandyChatService.h; sourceTree = "<group>"; };
+		66AB613D1CB0279D4D478C718A4E8493 /* KandyCallServiceNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallServiceNotificationDelegate.h; path = KandySDK.framework/Versions/A/Headers/KandyCallServiceNotificationDelegate.h; sourceTree = "<group>"; };
+		6762043D142A87DF2D1D35076B59BA4D /* KandySignupInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySignupInfo.h; path = KandySDK.framework/Versions/A/Headers/KandySignupInfo.h; sourceTree = "<group>"; };
+		684D05FA7D830E1C4BD8473153376619 /* KandyUserParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyUserParams.h; path = KandySDK.framework/Versions/A/Headers/KandyUserParams.h; sourceTree = "<group>"; };
+		6935D7B2BED5DF9EC451776485EFE21D /* KandyLocationItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLocationItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyLocationItemProtocol.h; sourceTree = "<group>"; };
+		69D56A0DBF11BFC4DA36BF9E2CF0025C /* KandyGroupParticipant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupParticipant.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupParticipant.h; sourceTree = "<group>"; };
+		6ADA6167DF4261B265A2BBF70D53A283 /* KandyAccessNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyAccessNotificationDelegate.h; path = KandySDK.framework/Versions/A/Headers/KandyAccessNotificationDelegate.h; sourceTree = "<group>"; };
+		6D1738F3DE2FDE9BCB051E5632D9F4AB /* KandySignupServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySignupServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandySignupServiceEnums.h; sourceTree = "<group>"; };
+		6E73810433B090D1EA3F50682C7BC657 /* KandyMessageProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyMessageProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyMessageProtocol.h; sourceTree = "<group>"; };
+		701E1F6C4C08FA622005B6A49A494DD9 /* KandyConnectServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyConnectServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyConnectServiceEnums.h; sourceTree = "<group>"; };
+		76FCD181F26BD02F9383DFAAE38A70AA /* KandyServiceErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyServiceErrors.h; path = KandySDK.framework/Versions/A/Headers/KandyServiceErrors.h; sourceTree = "<group>"; };
+		77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		79655447D3C1558F2E2F78A024B8B25D /* KandyBillingPackageProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyBillingPackageProperty.h; path = KandySDK.framework/Versions/A/Headers/KandyBillingPackageProperty.h; sourceTree = "<group>"; };
+		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		79E3AC2731F45009C21198CE6FD6E406 /* KandyMediaItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyMediaItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyMediaItemProtocol.h; sourceTree = "<group>"; };
+		7A616D343122F620304030E4B8F20260 /* KandySMSMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySMSMessage.h; path = KandySDK.framework/Versions/A/Headers/KandySMSMessage.h; sourceTree = "<group>"; };
+		7B9CC73452564AF9A57E60B8D967F41B /* FQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FQuery.h; sourceTree = "<group>"; };
+		7C5C06A19EF6712E0D81E93EAE2B04EE /* KandyCallActivityDataRetrievalDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallActivityDataRetrievalDelegate.h; path = KandySDK.framework/Versions/A/Headers/KandyCallActivityDataRetrievalDelegate.h; sourceTree = "<group>"; };
+		7CF7038EA48AF9112563C7DFAEFAE09B /* KandyCredit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCredit.h; path = KandySDK.framework/Versions/A/Headers/KandyCredit.h; sourceTree = "<group>"; };
+		7E482E3DD43EE9E3B86F50737D837559 /* KandyCallParticipantProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallParticipantProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyCallParticipantProtocol.h; sourceTree = "<group>"; };
+		7F2A85BADB9A5FF62139B327BB1600D0 /* KandyChatServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyChatServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyChatServiceEnums.h; sourceTree = "<group>"; };
+		810A5D66E276F1539A02617B835B51A5 /* KandyCallService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallService.h; path = KandySDK.framework/Versions/A/Headers/KandyCallService.h; sourceTree = "<group>"; };
+		83763AA5646137A03A675521912B6094 /* Firebase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Firebase.xcconfig; sourceTree = "<group>"; };
+		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		8A92B5ECF68F110216FAD37E9150D4A9 /* KandyAddressContactRecordProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyAddressContactRecordProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyAddressContactRecordProtocol.h; sourceTree = "<group>"; };
+		8ABA1D9BEF7D57612286A400B1A30B9D /* KandyLoggerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLoggerProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyLoggerProtocol.h; sourceTree = "<group>"; };
+		8AC38D21CA588B349D151EB624699648 /* KandyCloudStorageServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCloudStorageServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyCloudStorageServiceEnums.h; sourceTree = "<group>"; };
+		8C09C98455069914C32DA9FA5AC47F62 /* FMutableData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FMutableData.h; sourceTree = "<group>"; };
+		8D7F8F66F7FB9C298FFF8BAE15EA2973 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		927408B82EC0646ABCC2C71FB53B3FBA /* FAuthData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FAuthData.h; sourceTree = "<group>"; };
+		96A1EFC75F03286B02A47FC31E139AE7 /* KandyGlobalSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGlobalSettings.h; path = KandySDK.framework/Versions/A/Headers/KandyGlobalSettings.h; sourceTree = "<group>"; };
+		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		9835A31E592632A4040FF54CEFC64986 /* FirebaseApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FirebaseApp.h; sourceTree = "<group>"; };
+		9C06FC2F78175B0DA7E5F6EBCC0FBB84 /* FDataSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FDataSnapshot.h; sourceTree = "<group>"; };
+		9C4DA05572DF23CA18777DD2AFE1B74A /* KandySessionManagement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySessionManagement.h; path = KandySDK.framework/Versions/A/Headers/KandySessionManagement.h; sourceTree = "<group>"; };
+		9C80199E1BF9C27996FAC3CA79C656D3 /* KandyGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroup.h; path = KandySDK.framework/Versions/A/Headers/KandyGroup.h; sourceTree = "<group>"; };
+		9C982796F44914B86ACA75CB0695EF88 /* KandyGroupParticipantJoined.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupParticipantJoined.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupParticipantJoined.h; sourceTree = "<group>"; };
+		9D2FE3E1D7C99BCADF69C66224EC38FA /* KandyCloudStorageService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCloudStorageService.h; path = KandySDK.framework/Versions/A/Headers/KandyCloudStorageService.h; sourceTree = "<group>"; };
+		9E0D852CC47D0F8C9883C95A34454572 /* KandyLocationParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLocationParams.h; path = KandySDK.framework/Versions/A/Headers/KandyLocationParams.h; sourceTree = "<group>"; };
+		9F236B5098298FCC565D4C6824DDD953 /* Firebase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Firebase.modulemap; sourceTree = "<group>"; };
+		A235582E095E37457E268D0419D185FC /* KandyPendingIncomingCallEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPendingIncomingCallEvent.h; path = KandySDK.framework/Versions/A/Headers/KandyPendingIncomingCallEvent.h; sourceTree = "<group>"; };
+		A4C58044B847A5B1E8F9C08D4E76B652 /* KandyPushNotificationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPushNotificationService.h; path = KandySDK.framework/Versions/A/Headers/KandyPushNotificationService.h; sourceTree = "<group>"; };
+		A6C56F5C8AE2E6A2ADA2BEC9FBAE7DBC /* KandyGroupServiceSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupServiceSettings.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupServiceSettings.h; sourceTree = "<group>"; };
+		A6FA6331AFED5B00F3A1A5BD96E8BEEF /* KandyUserInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyUserInfo.h; path = KandySDK.framework/Versions/A/Headers/KandyUserInfo.h; sourceTree = "<group>"; };
+		A9083840D67725157FA007F8E4CC2F26 /* FirebaseServerValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FirebaseServerValue.h; sourceTree = "<group>"; };
+		AB7C949AF81DEC12E76874F1895F27AD /* KandySignupServiceSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySignupServiceSettings.h; path = KandySDK.framework/Versions/A/Headers/KandySignupServiceSettings.h; sourceTree = "<group>"; };
+		AD490E078F0568952A0BA5E8DAA96906 /* KandyFileItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyFileItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyFileItemProtocol.h; sourceTree = "<group>"; };
+		AF4986E9250A33AE6B19D7AA4C0B9D73 /* KandyChatDownloadPathBuilderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyChatDownloadPathBuilderProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyChatDownloadPathBuilderProtocol.h; sourceTree = "<group>"; };
+		AFCF6A5BCC65F0C65D3369142A3CA7B9 /* KandyLoggingEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLoggingEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyLoggingEnums.h; sourceTree = "<group>"; };
+		B2414B73F03834E5B77299E91DD31F7F /* KandyContactsServiceNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactsServiceNotificationDelegate.h; path = KandySDK.framework/Versions/A/Headers/KandyContactsServiceNotificationDelegate.h; sourceTree = "<group>"; };
+		B5C761A213469F5420DA945EF0A6E536 /* KandyRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyRecord.h; path = KandySDK.framework/Versions/A/Headers/KandyRecord.h; sourceTree = "<group>"; };
+		B5D104FB17FE671CB08264058133DF51 /* Firebase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Firebase-umbrella.h"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BD8FDDE4B48CE9D07C2370516D8C9CF7 /* KandyContactProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyContactProtocol.h; sourceTree = "<group>"; };
-		BFDCEDF11CC5329E8A2F6885DA7FBE21 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C03288AF7BBA4A7A3E328E9C4EA440AE /* KandyNotificationServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyNotificationServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyNotificationServiceEnums.h; sourceTree = "<group>"; };
-		C13EA05D3089E948DC710BE76CCE3214 /* KandyConnectServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyConnectServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyConnectServiceEnums.h; sourceTree = "<group>"; };
-		C24828DD37C9309A9213C47BFD9698EB /* KandyEmailContactRecordProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyEmailContactRecordProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyEmailContactRecordProtocol.h; sourceTree = "<group>"; };
-		C31576FB90E30452B99EE3400125C7BB /* KandyPresenceProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPresenceProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyPresenceProtocol.h; sourceTree = "<group>"; };
-		C3E9D5C156A0E01CB735F8507AF7515A /* KandyDeviceProfileParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyDeviceProfileParams.h; path = KandySDK.framework/Versions/A/Headers/KandyDeviceProfileParams.h; sourceTree = "<group>"; };
-		C5DFE553833466A021ACE697B2F16CA8 /* KandySubscriberProvision.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySubscriberProvision.h; path = KandySDK.framework/Versions/A/Headers/KandySubscriberProvision.h; sourceTree = "<group>"; };
-		CC2A403BFE212FF2CD333CF3D598E2EC /* KandyDomain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyDomain.h; path = KandySDK.framework/Versions/A/Headers/KandyDomain.h; sourceTree = "<group>"; };
-		CC30FBF6B60F27CBA8CE893E384709E1 /* KandyLocationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLocationService.h; path = KandySDK.framework/Versions/A/Headers/KandyLocationService.h; sourceTree = "<group>"; };
-		D09653CBDA73C7A2FA515635388A41B8 /* KandyLocationItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLocationItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyLocationItemProtocol.h; sourceTree = "<group>"; };
-		D20974CD20F9F9FF3AFC4B352089AC3C /* KandyImageItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyImageItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyImageItemProtocol.h; sourceTree = "<group>"; };
-		DCBA8C7DB34F4CFD5F6C82961FA0D8CC /* KandyOutgoingCallProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyOutgoingCallProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyOutgoingCallProtocol.h; sourceTree = "<group>"; };
-		DD136C61C7A7D021FA9FDD2B55DD70C1 /* KandyCredit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCredit.h; path = KandySDK.framework/Versions/A/Headers/KandyCredit.h; sourceTree = "<group>"; };
-		DE01D66B83BE2EA1B6D8A072D024A3FF /* KandyLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLogger.h; path = KandySDK.framework/Versions/A/Headers/KandyLogger.h; sourceTree = "<group>"; };
-		DE829D36D236706C64F762640D2AF084 /* KandyPresenceService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPresenceService.h; path = KandySDK.framework/Versions/A/Headers/KandyPresenceService.h; sourceTree = "<group>"; };
-		DF2F2D05B9A5C0B3E9039DEE653E883B /* KandyChatService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyChatService.h; path = KandySDK.framework/Versions/A/Headers/KandyChatService.h; sourceTree = "<group>"; };
-		E0D424D2A65E799A541F267B66DE9418 /* KandyGroupParticipantJoined.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupParticipantJoined.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupParticipantJoined.h; sourceTree = "<group>"; };
-		E7D6F6C5E8DFEDA82123590C7F204F30 /* KandyChatDownloadPathBuilderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyChatDownloadPathBuilderProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyChatDownloadPathBuilderProtocol.h; sourceTree = "<group>"; };
-		EA516199DB1B55B49549799FFF86EFAB /* KandyPendingVoiceMail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPendingVoiceMail.h; path = KandySDK.framework/Versions/A/Headers/KandyPendingVoiceMail.h; sourceTree = "<group>"; };
-		EEC0CF47751E8666DFACFC71F5CA41B4 /* KandySignupInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySignupInfo.h; path = KandySDK.framework/Versions/A/Headers/KandySignupInfo.h; sourceTree = "<group>"; };
-		F0B9267E784F229F5C7FA7A578FEBBC7 /* KandyUserInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyUserInfo.h; path = KandySDK.framework/Versions/A/Headers/KandyUserInfo.h; sourceTree = "<group>"; };
-		F0C6F77AE166BFCD5832D5C9F3E6FF9C /* KandyCallService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallService.h; path = KandySDK.framework/Versions/A/Headers/KandyCallService.h; sourceTree = "<group>"; };
-		F2B9961D6EFA185520BADA8E18CAC50C /* KandyGroupParticipantKicked.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupParticipantKicked.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupParticipantKicked.h; sourceTree = "<group>"; };
-		F2DFD6DA22A6B862974EBF8D82BCA165 /* KandyAddressContactRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyAddressContactRecord.h; path = KandySDK.framework/Versions/A/Headers/KandyAddressContactRecord.h; sourceTree = "<group>"; };
-		F522DC16A4022F5FE0337030A849C9A6 /* KandyGroupDownloadPathBuilderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupDownloadPathBuilderProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupDownloadPathBuilderProtocol.h; sourceTree = "<group>"; };
-		F5425894135D63E91DB57B8BC64A6A60 /* KandyBillingServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyBillingServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyBillingServiceEnums.h; sourceTree = "<group>"; };
-		F7345F490646D06DCC41AF4B6C783BFA /* KandyBillingPackageProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyBillingPackageProperty.h; path = KandySDK.framework/Versions/A/Headers/KandyBillingPackageProperty.h; sourceTree = "<group>"; };
-		F8A151463CE2A8DF58905A71C12D56D4 /* KandyCallActivityRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallActivityRecord.h; path = KandySDK.framework/Versions/A/Headers/KandyCallActivityRecord.h; sourceTree = "<group>"; };
-		FD3F7C842ABE1E87DE206EC7D901BFD7 /* KandyPushNotificationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPushNotificationService.h; path = KandySDK.framework/Versions/A/Headers/KandyPushNotificationService.h; sourceTree = "<group>"; };
-		FDD0BC69BE83EFE4CD4114DE8284F3CF /* KandyLoggingEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLoggingEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyLoggingEnums.h; sourceTree = "<group>"; };
+		BA975D7778A1573960B617FF3C0B06AC /* KandyEventProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyEventProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyEventProtocol.h; sourceTree = "<group>"; };
+		BC8BA0BD29DF42999E77554DF406A4D7 /* FEventType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FEventType.h; sourceTree = "<group>"; };
+		BE33ECA179CC992CC827BC32DB090FD5 /* KandyGroupParticipantLeft.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupParticipantLeft.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupParticipantLeft.h; sourceTree = "<group>"; };
+		BFD7456EDF3ABFF04E1670342755463C /* FConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FConfig.h; sourceTree = "<group>"; };
+		C1572674DEA50AE140262DEBFEB8FA6E /* KandyCallTerminationReasonProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCallTerminationReasonProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyCallTerminationReasonProtocol.h; sourceTree = "<group>"; };
+		C5BE62A122131C399C7A558DBAFFD85F /* KandyChatServiceSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyChatServiceSettings.h; path = KandySDK.framework/Versions/A/Headers/KandyChatServiceSettings.h; sourceTree = "<group>"; };
+		C6204446BD9150A17B12E81B4A6F9CA8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C66B8590BD4385380DD8DEAC6D1DB261 /* Firebase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Firebase-dummy.m"; sourceTree = "<group>"; };
+		C6D12A7DCA98E7BFA9813751DB0E5227 /* KandyPresenceService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPresenceService.h; path = KandySDK.framework/Versions/A/Headers/KandyPresenceService.h; sourceTree = "<group>"; };
+		C6DDF947955AC160C61B72B8C18D5B23 /* KandyPresenceServiceNotificationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPresenceServiceNotificationDelegate.h; path = KandySDK.framework/Versions/A/Headers/KandyPresenceServiceNotificationDelegate.h; sourceTree = "<group>"; };
+		C815081E0654DCD66808759DBC728B57 /* KandyContactsService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactsService.h; path = KandySDK.framework/Versions/A/Headers/KandyContactsService.h; sourceTree = "<group>"; };
+		C81B07E584D67ABDB9861C6755C50627 /* KandyAccess.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyAccess.h; path = KandySDK.framework/Versions/A/Headers/KandyAccess.h; sourceTree = "<group>"; };
+		C9E2B11BCCF970930FCAAB5EBAD031B5 /* KandyContactParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactParams.h; path = KandySDK.framework/Versions/A/Headers/KandyContactParams.h; sourceTree = "<group>"; };
+		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		CC3B2D5B5B49B7709FAD02F03B9D8122 /* KandyPhoneContactRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPhoneContactRecord.h; path = KandySDK.framework/Versions/A/Headers/KandyPhoneContactRecord.h; sourceTree = "<group>"; };
+		CC450AD694CA2940589249FF88C46E88 /* KandyMDLInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyMDLInfo.h; path = KandySDK.framework/Versions/A/Headers/KandyMDLInfo.h; sourceTree = "<group>"; };
+		CC77D50782148E8B17C25097C27D18B4 /* KandyContactRecordProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactRecordProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyContactRecordProtocol.h; sourceTree = "<group>"; };
+		CCA1E06B698DD235C2EDCD13FE3FA145 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Empty.m; sourceTree = "<group>"; };
+		CD3E08C64F870B64EB60045A37F2DB37 /* KandyVideoCompressionSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyVideoCompressionSettings.h; path = KandySDK.framework/Versions/A/Headers/KandyVideoCompressionSettings.h; sourceTree = "<group>"; };
+		CD60D80F6A53A28272E627EFB11990D2 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		CF2F68533A71154A094619061BF2A376 /* KandyContactItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyContactItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyContactItemProtocol.h; sourceTree = "<group>"; };
+		D0126D4D9DEB0693BD3B924BE3172D5E /* KandyGroupParticipantKicked.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupParticipantKicked.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupParticipantKicked.h; sourceTree = "<group>"; };
+		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D0EBDDA30E2451D096349EB12BBA310B /* KandySocialProfileContactRecordProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySocialProfileContactRecordProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandySocialProfileContactRecordProtocol.h; sourceTree = "<group>"; };
+		D0FDDEDDE0B8BF8B12AFDE9BB0E5D1C0 /* KandyDeliveryAck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyDeliveryAck.h; path = KandySDK.framework/Versions/A/Headers/KandyDeliveryAck.h; sourceTree = "<group>"; };
+		D1C5C5B6FC00B84F59D85949E577A997 /* FTransactionResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FTransactionResult.h; sourceTree = "<group>"; };
+		D2E9FCCC8A54CAAE1B75465D8497E63C /* KandyGroupCoreServiceProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyGroupCoreServiceProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyGroupCoreServiceProtocol.h; sourceTree = "<group>"; };
+		D2FA1AAE18556297AC9024C1DE95B8F5 /* KandyNotificationServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyNotificationServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyNotificationServiceEnums.h; sourceTree = "<group>"; };
+		D990C882212512F56873408052B0AB85 /* KandyChatMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyChatMessage.h; path = KandySDK.framework/Versions/A/Headers/KandyChatMessage.h; sourceTree = "<group>"; };
+		D9A3710818A68EDC41D9DDE3535D02A6 /* KandyLocationServiceSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLocationServiceSettings.h; path = KandySDK.framework/Versions/A/Headers/KandyLocationServiceSettings.h; sourceTree = "<group>"; };
+		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		DB0568B1D8CDBDA1FFE578C5857B4ABC /* KandyCustomItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyCustomItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyCustomItemProtocol.h; sourceTree = "<group>"; };
+		E04D4E34B758A130B24704B7EE6E3F3F /* Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0D2AA0EF8D81E7754820A00A46F5856 /* KandyMediaUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyMediaUtils.h; path = KandySDK.framework/Versions/A/Headers/KandyMediaUtils.h; sourceTree = "<group>"; };
+		E1B00EB979057FBC4F3531C429C99F3F /* KandyBillingService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyBillingService.h; path = KandySDK.framework/Versions/A/Headers/KandyBillingService.h; sourceTree = "<group>"; };
+		E530CFBFE9FBDF433F00AAB9CE51FA0C /* KandySubscriberProvision.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandySubscriberProvision.h; path = KandySDK.framework/Versions/A/Headers/KandySubscriberProvision.h; sourceTree = "<group>"; };
+		E64162CF05A6CCD71717885EEDD8FD8D /* KandyBillingServiceEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyBillingServiceEnums.h; path = KandySDK.framework/Versions/A/Headers/KandyBillingServiceEnums.h; sourceTree = "<group>"; };
+		E6773748654BBC7A0DB8104572B3AFD8 /* KandyOutgoingCallProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyOutgoingCallProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyOutgoingCallProtocol.h; sourceTree = "<group>"; };
+		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFCF83CF3FE0A97DEC6DDB22D5FB769C /* KandyImageItemProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyImageItemProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyImageItemProtocol.h; sourceTree = "<group>"; };
+		F06EF6D64CC1568AF36C23CADC7C564A /* KandyGroup+Actions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "KandyGroup+Actions.h"; path = "KandySDK.framework/Versions/A/Headers/KandyGroup+Actions.h"; sourceTree = "<group>"; };
+		F4FDECCD6B3FD7DD490D36F49F953D86 /* KandyMessageBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyMessageBuilder.h; path = KandySDK.framework/Versions/A/Headers/KandyMessageBuilder.h; sourceTree = "<group>"; };
+		F88C9932D913B89C2504F23C93957CB8 /* KandyAreaCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyAreaCode.h; path = KandySDK.framework/Versions/A/Headers/KandyAreaCode.h; sourceTree = "<group>"; };
+		FC5399A2CB09EB6F789107FA7A1F7E28 /* KandyLocationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyLocationService.h; path = KandySDK.framework/Versions/A/Headers/KandyLocationService.h; sourceTree = "<group>"; };
+		FD86B3E5929FD93D31F22C66A5CE1715 /* KandyAccessSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyAccessSettings.h; path = KandySDK.framework/Versions/A/Headers/KandyAccessSettings.h; sourceTree = "<group>"; };
+		FDD8B67F53D18A28EE5084E055A2BD11 /* KandyPresenceProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KandyPresenceProtocol.h; path = KandySDK.framework/Versions/A/Headers/KandyPresenceProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2E78C4AC537A1782BCFD134B2B8940E0 /* Frameworks */ = {
+		A7E10F383DCD59079712A57B50DCF88E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E579FF358AF2261C8682A7FA383EAA6 /* Foundation.framework in Frameworks */,
+				E3FBB5B462A14E8ACC9B340227DE4BE1 /* CFNetwork.framework in Frameworks */,
+				4B0EFAAA29109D9A705A27EFFA10FAE2 /* Foundation.framework in Frameworks */,
+				1C04A7CD5B70C4561F6D98C882731C65 /* Security.framework in Frameworks */,
+				E1A883FEBDEED9B85D90D6BE2080F218 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F932747D1B83E6FD99122CAAEE48F6E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C3D34A5EA5946DEDC3B3AC14411B58 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B3D1D13E0C6553800746CB8FD61CF946 /* Pods */,
+				843A690C4A272ACCFA5202DC4499C74E /* iOS */,
 			);
-			name = "Targets Support Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1F0B9F713A13B4F29BE0C0E7483B187B /* Products */ = {
+		3336DD323B603CA6E150C102B98D4269 /* Kandy */ = {
 			isa = PBXGroup;
 			children = (
-				BFDCEDF11CC5329E8A2F6885DA7FBE21 /* libPods.a */,
+				05502083E4F82B4BB75917763E433EDB /* Kandy.h */,
+				C81B07E584D67ABDB9861C6755C50627 /* KandyAccess.h */,
+				6ADA6167DF4261B265A2BBF70D53A283 /* KandyAccessNotificationDelegate.h */,
+				FD86B3E5929FD93D31F22C66A5CE1715 /* KandyAccessSettings.h */,
+				351923A4EE84341C4B0525001590EF72 /* KandyAddressContactRecord.h */,
+				8A92B5ECF68F110216FAD37E9150D4A9 /* KandyAddressContactRecordProtocol.h */,
+				F88C9932D913B89C2504F23C93957CB8 /* KandyAreaCode.h */,
+				5772E66DFEA137D33A6021AE81D33007 /* KandyAudioItemProtocol.h */,
+				0DEE5E04AB53F4424694D020F1182DCF /* KandyBillingPackage.h */,
+				79655447D3C1558F2E2F78A024B8B25D /* KandyBillingPackageProperty.h */,
+				E1B00EB979057FBC4F3531C429C99F3F /* KandyBillingService.h */,
+				E64162CF05A6CCD71717885EEDD8FD8D /* KandyBillingServiceEnums.h */,
+				7C5C06A19EF6712E0D81E93EAE2B04EE /* KandyCallActivityDataRetrievalDelegate.h */,
+				56DDFE428EC5CA0E6253912B64D6F800 /* KandyCallActivityRecord.h */,
+				7E482E3DD43EE9E3B86F50737D837559 /* KandyCallParticipantProtocol.h */,
+				154BABED60F9B5A1101DCD1964E7B60A /* KandyCallProtocol.h */,
+				810A5D66E276F1539A02617B835B51A5 /* KandyCallService.h */,
+				448551E85FE6891F8E0C555E46DC53EF /* KandyCallServiceEnums.h */,
+				66AB613D1CB0279D4D478C718A4E8493 /* KandyCallServiceNotificationDelegate.h */,
+				626B55AA3869AAC1CCF6DC4DB6D9B820 /* KandyCallServiceSettings.h */,
+				C1572674DEA50AE140262DEBFEB8FA6E /* KandyCallTerminationReasonProtocol.h */,
+				AF4986E9250A33AE6B19D7AA4C0B9D73 /* KandyChatDownloadPathBuilderProtocol.h */,
+				D990C882212512F56873408052B0AB85 /* KandyChatMessage.h */,
+				65CC2F1A3F067F540D010DE5045D0CF1 /* KandyChatService.h */,
+				7F2A85BADB9A5FF62139B327BB1600D0 /* KandyChatServiceEnums.h */,
+				2D39003FC5DA464405B45FA72A6EB051 /* KandyChatServiceNotificationDelegate.h */,
+				C5BE62A122131C399C7A558DBAFFD85F /* KandyChatServiceSettings.h */,
+				9D2FE3E1D7C99BCADF69C66224EC38FA /* KandyCloudStorageService.h */,
+				8AC38D21CA588B349D151EB624699648 /* KandyCloudStorageServiceEnums.h */,
+				701E1F6C4C08FA622005B6A49A494DD9 /* KandyConnectServiceEnums.h */,
+				CF2F68533A71154A094619061BF2A376 /* KandyContactItemProtocol.h */,
+				C9E2B11BCCF970930FCAAB5EBAD031B5 /* KandyContactParams.h */,
+				26696FE9959C9D6BEEECA4AB882E126B /* KandyContactProtocol.h */,
+				CC77D50782148E8B17C25097C27D18B4 /* KandyContactRecordProtocol.h */,
+				C815081E0654DCD66808759DBC728B57 /* KandyContactsService.h */,
+				46675A84EB03A78CB0356234542FA7C7 /* KandyContactsServiceEnums.h */,
+				B2414B73F03834E5B77299E91DD31F7F /* KandyContactsServiceNotificationDelegate.h */,
+				7CF7038EA48AF9112563C7DFAEFAE09B /* KandyCredit.h */,
+				DB0568B1D8CDBDA1FFE578C5857B4ABC /* KandyCustomItemProtocol.h */,
+				D0FDDEDDE0B8BF8B12AFDE9BB0E5D1C0 /* KandyDeliveryAck.h */,
+				04E09F9077BFD1FB6FF975625D83F6AF /* KandyDeviceProfileParams.h */,
+				4FDC087AEFBD21C1EEA2D4BB8AE1ED52 /* KandyDeviceProfileProtocol.h */,
+				595CFAEE79EBFAA233E39E4F9827B053 /* KandyDomain.h */,
+				43375225B7D9004170BD584A0B6F439C /* KandyEmailContactRecord.h */,
+				0DBD4811B74B0F4501AAACA4781E1710 /* KandyEmailContactRecordProtocol.h */,
+				BA975D7778A1573960B617FF3C0B06AC /* KandyEventProtocol.h */,
+				AD490E078F0568952A0BA5E8DAA96906 /* KandyFileItemProtocol.h */,
+				96A1EFC75F03286B02A47FC31E139AE7 /* KandyGlobalSettings.h */,
+				9C80199E1BF9C27996FAC3CA79C656D3 /* KandyGroup.h */,
+				F06EF6D64CC1568AF36C23CADC7C564A /* KandyGroup+Actions.h */,
+				D2E9FCCC8A54CAAE1B75465D8497E63C /* KandyGroupCoreServiceProtocol.h */,
+				4FC7166985DDB95B64A3ABC13CC5C9FB /* KandyGroupDestroyed.h */,
+				0FD3D1A0FE6E37BDF9F108D245C81414 /* KandyGroupDownloadPathBuilderProtocol.h */,
+				536E2A5A14E3587D19E5C64799A887B2 /* KandyGroupParams.h */,
+				69D56A0DBF11BFC4DA36BF9E2CF0025C /* KandyGroupParticipant.h */,
+				9C982796F44914B86ACA75CB0695EF88 /* KandyGroupParticipantJoined.h */,
+				D0126D4D9DEB0693BD3B924BE3172D5E /* KandyGroupParticipantKicked.h */,
+				BE33ECA179CC992CC827BC32DB090FD5 /* KandyGroupParticipantLeft.h */,
+				506546AD502930B0A3CE317CA3707C93 /* KandyGroupService.h */,
+				603C9BD138EB580B9D22BAA9BE970DCB /* KandyGroupServiceNotificationDelegate.h */,
+				A6C56F5C8AE2E6A2ADA2BEC9FBAE7DBC /* KandyGroupServiceSettings.h */,
+				3CEFB5863048A2E8A05D821F9894901E /* KandyGroupUpdated.h */,
+				EFCF83CF3FE0A97DEC6DDB22D5FB769C /* KandyImageItemProtocol.h */,
+				512B8AB2D59D1836F80403B12E6A7432 /* KandyIncomingCallProtocol.h */,
+				6935D7B2BED5DF9EC451776485EFE21D /* KandyLocationItemProtocol.h */,
+				9E0D852CC47D0F8C9883C95A34454572 /* KandyLocationParams.h */,
+				FC5399A2CB09EB6F789107FA7A1F7E28 /* KandyLocationService.h */,
+				5ADDA5D3512972FF7D770B4AE82875A4 /* KandyLocationServiceEnums.h */,
+				D9A3710818A68EDC41D9DDE3535D02A6 /* KandyLocationServiceSettings.h */,
+				0ADB2EF251DE627F9BF772D54285635F /* KandyLogger.h */,
+				8ABA1D9BEF7D57612286A400B1A30B9D /* KandyLoggerProtocol.h */,
+				AFCF6A5BCC65F0C65D3369142A3CA7B9 /* KandyLoggingEnums.h */,
+				1979E6F67669211D7743DA1184AE018E /* KandyLoggingFormatter.h */,
+				02071C25D4521A4316209BCED4D4DF9A /* KandyLoggingFormatterProtocol.h */,
+				CC450AD694CA2940589249FF88C46E88 /* KandyMDLInfo.h */,
+				79E3AC2731F45009C21198CE6FD6E406 /* KandyMediaItemProtocol.h */,
+				E0D2AA0EF8D81E7754820A00A46F5856 /* KandyMediaUtils.h */,
+				F4FDECCD6B3FD7DD490D36F49F953D86 /* KandyMessageBuilder.h */,
+				6E73810433B090D1EA3F50682C7BC657 /* KandyMessageProtocol.h */,
+				584E0362287E496366FCF0A1D70CBB41 /* KandyMissedCall.h */,
+				D2FA1AAE18556297AC9024C1DE95B8F5 /* KandyNotificationServiceEnums.h */,
+				E6773748654BBC7A0DB8104572B3AFD8 /* KandyOutgoingCallProtocol.h */,
+				A235582E095E37457E268D0419D185FC /* KandyPendingIncomingCallEvent.h */,
+				1CC6979EE26B6DA20FC7FA4137F62D10 /* KandyPendingVoiceMail.h */,
+				CC3B2D5B5B49B7709FAD02F03B9D8122 /* KandyPhoneContactRecord.h */,
+				4797F1448EE47B49DE632B1CD284DE8B /* KandyPhoneContactRecordProtocol.h */,
+				FDD8B67F53D18A28EE5084E055A2BD11 /* KandyPresenceProtocol.h */,
+				C6D12A7DCA98E7BFA9813751DB0E5227 /* KandyPresenceService.h */,
+				4FCA806D1E00AE5CA15AF2854AEE5EE9 /* KandyPresenceServiceEnums.h */,
+				C6DDF947955AC160C61B72B8C18D5B23 /* KandyPresenceServiceNotificationDelegate.h */,
+				47EB947C41AC061D7A7489AA149A8CDC /* KandyProfileService.h */,
+				12AE44AFCD888E3E9106C08C5B865230 /* KandyProfileServiceEnums.h */,
+				A4C58044B847A5B1E8F9C08D4E76B652 /* KandyPushNotificationService.h */,
+				B5C761A213469F5420DA945EF0A6E536 /* KandyRecord.h */,
+				12649165A0CAD8DA25F043A001926397 /* KandySDK.h */,
+				76FCD181F26BD02F9383DFAAE38A70AA /* KandyServiceErrors.h */,
+				0D0EE9875C50C9F43289A59339566B18 /* KandyServices.h */,
+				49F4494CAB59B115BDC09880DD1FA5F1 /* KandySession.h */,
+				9C4DA05572DF23CA18777DD2AFE1B74A /* KandySessionManagement.h */,
+				6762043D142A87DF2D1D35076B59BA4D /* KandySignupInfo.h */,
+				6D1738F3DE2FDE9BCB051E5632D9F4AB /* KandySignupServiceEnums.h */,
+				AB7C949AF81DEC12E76874F1895F27AD /* KandySignupServiceSettings.h */,
+				7A616D343122F620304030E4B8F20260 /* KandySMSMessage.h */,
+				351AFC88459A4F24E567108B65442FDB /* KandySocialProfileContactRecord.h */,
+				D0EBDDA30E2451D096349EB12BBA310B /* KandySocialProfileContactRecordProtocol.h */,
+				E530CFBFE9FBDF433F00AAB9CE51FA0C /* KandySubscriberProvision.h */,
+				5830D54BA0C99A6AFA61FB5FD0E1EB52 /* KandyTextItemProtocol.h */,
+				33DF16DCB55920EB8E4484CDCA1DFDF8 /* KandyTransferProgress.h */,
+				A6FA6331AFED5B00F3A1A5BD96E8BEEF /* KandyUserInfo.h */,
+				684D05FA7D830E1C4BD8473153376619 /* KandyUserParams.h */,
+				4DBE60F77314AD0BA1600B935FD0C94B /* KandyUserProvisionInfo.h */,
+				CD3E08C64F870B64EB60045A37F2DB37 /* KandyVideoCompressionSettings.h */,
+				18E84F2BBC9F4117695DBC43598CD547 /* KandyVideoItemProtocol.h */,
 			);
-			name = Products;
+			path = Kandy;
 			sourceTree = "<group>";
 		};
-		54985547F57398D16669B4E926DF81B3 /* Pods */ = {
+		4B5C5829C299A59F7B179D7409692670 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E5D9E684BE624D781E8A0C028A257867 /* Kandy */,
+				052E45B449FCDA68087260D4A7BF6381 /* libFirebaseStatic.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52A2BBC17A435407689CCCECF30D6D17 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				CCA1E06B698DD235C2EDCD13FE3FA145 /* Empty.m */,
+				927408B82EC0646ABCC2C71FB53B3FBA /* FAuthData.h */,
+				1DFD96EEA0F5B6B7A50F99BE423EE676 /* FAuthType.h */,
+				BFD7456EDF3ABFF04E1670342755463C /* FConfig.h */,
+				9C06FC2F78175B0DA7E5F6EBCC0FBB84 /* FDataSnapshot.h */,
+				BC8BA0BD29DF42999E77554DF406A4D7 /* FEventType.h */,
+				CD60D80F6A53A28272E627EFB11990D2 /* Firebase.h */,
+				9835A31E592632A4040FF54CEFC64986 /* FirebaseApp.h */,
+				A9083840D67725157FA007F8E4CC2F26 /* FirebaseServerValue.h */,
+				8C09C98455069914C32DA9FA5AC47F62 /* FMutableData.h */,
+				7B9CC73452564AF9A57E60B8D967F41B /* FQuery.h */,
+				D1C5C5B6FC00B84F59D85949E577A997 /* FTransactionResult.h */,
+				4B5C5829C299A59F7B179D7409692670 /* Frameworks */,
+				A110DC496B54AB28FA550A719732C4A7 /* Support Files */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
+				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
+				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
+				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
+				894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */,
+				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
+				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
+				2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */,
+				977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */,
+				DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				54985547F57398D16669B4E926DF81B3 /* Pods */,
-				1F0B9F713A13B4F29BE0C0E7483B187B /* Products */,
-				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				B03E6551083B509F3B94132B28CA0C05 /* Pods */,
+				CD224DEDDF2C520DBD6E33AE62978EF2 /* Products */,
+				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
+		843A690C4A272ACCFA5202DC4499C74E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */,
-				10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */,
-				272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */,
-				6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */,
-				A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */,
-				4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */,
-				98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+				60F85758B54CB0D843A3E97DFFB2F21F /* CFNetwork.framework */,
+				77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */,
+				C6204446BD9150A17B12E81B4A6F9CA8 /* Security.framework */,
+				6166BE40C18BC6BF0EED92CAB212EC33 /* SystemConfiguration.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E5D9E684BE624D781E8A0C028A257867 /* Kandy */ = {
+		A110DC496B54AB28FA550A719732C4A7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3B2A2FCCD2F34AEC9CF36ACA0EA59B87 /* Kandy.h */,
-				5563BE849DA51316E750A67EC50E7316 /* KandyAccess.h */,
-				3F208CC564D0AA729440C5ACF2312319 /* KandyAccessNotificationDelegate.h */,
-				A552A5E9B75E5ECF7F4F94E0C00A2C68 /* KandyAccessSettings.h */,
-				F2DFD6DA22A6B862974EBF8D82BCA165 /* KandyAddressContactRecord.h */,
-				65808D23530DC2DE3FB4EB16A051CA21 /* KandyAddressContactRecordProtocol.h */,
-				0F0A96BE950EF42549FC7EF34B75278E /* KandyAreaCode.h */,
-				526C50C881302921E1033E974552C05D /* KandyAudioItemProtocol.h */,
-				57850EF5E51DF0F64FF74270A294010F /* KandyBillingPackage.h */,
-				F7345F490646D06DCC41AF4B6C783BFA /* KandyBillingPackageProperty.h */,
-				B8D2D738B2EEEBB20B9C43DDCFA914A0 /* KandyBillingService.h */,
-				F5425894135D63E91DB57B8BC64A6A60 /* KandyBillingServiceEnums.h */,
-				49A1BF797AE65532F9F5AB5E23A141D3 /* KandyCallActivityDataRetrievalDelegate.h */,
-				F8A151463CE2A8DF58905A71C12D56D4 /* KandyCallActivityRecord.h */,
-				B4A18E233BE8B53B679BA6B4833ABEF3 /* KandyCallParticipantProtocol.h */,
-				B571E59201476F5030ACE08FC57B706C /* KandyCallProtocol.h */,
-				F0C6F77AE166BFCD5832D5C9F3E6FF9C /* KandyCallService.h */,
-				67C0FEF5F451C267AC5C78BE5E0BB768 /* KandyCallServiceEnums.h */,
-				6408901611A88832371A4DAB1525D75D /* KandyCallServiceNotificationDelegate.h */,
-				AD539BB04A91957D6F2ACB559B025AB7 /* KandyCallServiceSettings.h */,
-				02736999D45E3779FD523D877076A96B /* KandyCallTerminationReasonProtocol.h */,
-				E7D6F6C5E8DFEDA82123590C7F204F30 /* KandyChatDownloadPathBuilderProtocol.h */,
-				6983220164A998DD3E11D1CAF1B099B4 /* KandyChatMessage.h */,
-				DF2F2D05B9A5C0B3E9039DEE653E883B /* KandyChatService.h */,
-				9EE1DD4DCE9A5319FABECE78C8537F8E /* KandyChatServiceEnums.h */,
-				58AFA2A482FA5E226F83E68337180713 /* KandyChatServiceNotificationDelegate.h */,
-				1B747C45968ED3D0E12FAB18DE398EFF /* KandyChatServiceSettings.h */,
-				38D86381A4F301AFCE79D61ADA170CDB /* KandyCloudStorageService.h */,
-				8AFA048D3B7FC347C9BC1941894C68D2 /* KandyCloudStorageServiceEnums.h */,
-				C13EA05D3089E948DC710BE76CCE3214 /* KandyConnectServiceEnums.h */,
-				70E41E71F23D482405039BF96D424D25 /* KandyContactItemProtocol.h */,
-				8E9FB43487A384AA71F21FEE8048BD03 /* KandyContactParams.h */,
-				BD8FDDE4B48CE9D07C2370516D8C9CF7 /* KandyContactProtocol.h */,
-				36E6241C1B63AD9619D79EB15D5205FA /* KandyContactRecordProtocol.h */,
-				118E34F29B0995FE1D0FDAA20C857867 /* KandyContactsService.h */,
-				69E18D8B5BEDDDF65F0AD5FC478142DD /* KandyContactsServiceEnums.h */,
-				1B61810588A292EDF32791342263174E /* KandyContactsServiceNotificationDelegate.h */,
-				DD136C61C7A7D021FA9FDD2B55DD70C1 /* KandyCredit.h */,
-				6B68C6A46B08F166CD65FFFD906798FF /* KandyCustomItemProtocol.h */,
-				1C76E36C59AB8D7B1A9D74940D2C04FE /* KandyDeliveryAck.h */,
-				C3E9D5C156A0E01CB735F8507AF7515A /* KandyDeviceProfileParams.h */,
-				47E5D12743ED5DCA64735EF332885965 /* KandyDeviceProfileProtocol.h */,
-				CC2A403BFE212FF2CD333CF3D598E2EC /* KandyDomain.h */,
-				9AB2BCA18FD23351B1702295DB5E3B6F /* KandyEmailContactRecord.h */,
-				C24828DD37C9309A9213C47BFD9698EB /* KandyEmailContactRecordProtocol.h */,
-				915D17F96C854DD5F52A34A0225D1EAC /* KandyEventProtocol.h */,
-				0930BFD7DB15188B26CB373BC2DC7C4D /* KandyFileItemProtocol.h */,
-				7656E82F3F182F03E47F193CD595A4B5 /* KandyGlobalSettings.h */,
-				5D1138E30AC48835D35AE9141A736F13 /* KandyGroup.h */,
-				70C592ED153313603197C031F17BB636 /* KandyGroup+Actions.h */,
-				5C0A42D4C497B052875979EF224AEFA8 /* KandyGroupCoreServiceProtocol.h */,
-				5F97E19FCC35CAC9E2ADA9AB165D1F70 /* KandyGroupDestroyed.h */,
-				F522DC16A4022F5FE0337030A849C9A6 /* KandyGroupDownloadPathBuilderProtocol.h */,
-				916B4C235E4ED179080125325056E52C /* KandyGroupParams.h */,
-				4BB008A2D84BA8648A341AEF8B93185C /* KandyGroupParticipant.h */,
-				E0D424D2A65E799A541F267B66DE9418 /* KandyGroupParticipantJoined.h */,
-				F2B9961D6EFA185520BADA8E18CAC50C /* KandyGroupParticipantKicked.h */,
-				1DF83263301D3E2B2451E09D33826ECF /* KandyGroupParticipantLeft.h */,
-				44A6B81B0295325439A6F2F390C1B04F /* KandyGroupService.h */,
-				A1D0EAE8B728D8D64382DE9D0DBAA974 /* KandyGroupServiceNotificationDelegate.h */,
-				740E73DE500FAF3A9DD9078DD35C06C0 /* KandyGroupServiceSettings.h */,
-				0CCA85FB647EEC2229F98607517E95C4 /* KandyGroupUpdated.h */,
-				D20974CD20F9F9FF3AFC4B352089AC3C /* KandyImageItemProtocol.h */,
-				5C61AEC78E45D3DBF2194E1B70E29878 /* KandyIncomingCallProtocol.h */,
-				D09653CBDA73C7A2FA515635388A41B8 /* KandyLocationItemProtocol.h */,
-				219F6366BC13E1FE3761067CCEAFCB35 /* KandyLocationParams.h */,
-				CC30FBF6B60F27CBA8CE893E384709E1 /* KandyLocationService.h */,
-				36BE2AA8662676140067CB8134688C0C /* KandyLocationServiceEnums.h */,
-				458659B0237DDB089224F7787C229E9C /* KandyLocationServiceSettings.h */,
-				DE01D66B83BE2EA1B6D8A072D024A3FF /* KandyLogger.h */,
-				95A08EE079248001B7A5D081F50DB20E /* KandyLoggerProtocol.h */,
-				FDD0BC69BE83EFE4CD4114DE8284F3CF /* KandyLoggingEnums.h */,
-				856D16A3263C427728B245D8F52C4A46 /* KandyLoggingFormatter.h */,
-				865B31E3AAD35CE8AED2CF0EF6C43227 /* KandyLoggingFormatterProtocol.h */,
-				7B0F9A899DB829A409A0545F95F05BC2 /* KandyMDLInfo.h */,
-				AFB8DB6E90E005EB92DD19087E29B2D7 /* KandyMediaItemProtocol.h */,
-				24D9232E75127B32A987C4A885995249 /* KandyMediaUtils.h */,
-				83A31DE2293495011450EA7F656F3C63 /* KandyMessageBuilder.h */,
-				908F9CDE7DB42872F4812367C19B70D1 /* KandyMessageProtocol.h */,
-				41B2AB483CD664FFDFDF276123F4146E /* KandyMissedCall.h */,
-				C03288AF7BBA4A7A3E328E9C4EA440AE /* KandyNotificationServiceEnums.h */,
-				DCBA8C7DB34F4CFD5F6C82961FA0D8CC /* KandyOutgoingCallProtocol.h */,
-				3E29E32218B4BB58AF96144B591FC8C9 /* KandyPendingIncomingCallEvent.h */,
-				EA516199DB1B55B49549799FFF86EFAB /* KandyPendingVoiceMail.h */,
-				16F56D4E3156040D7432ACC6266F8EC6 /* KandyPhoneContactRecord.h */,
-				7194AD9F3245941212697C716FD68CC3 /* KandyPhoneContactRecordProtocol.h */,
-				C31576FB90E30452B99EE3400125C7BB /* KandyPresenceProtocol.h */,
-				DE829D36D236706C64F762640D2AF084 /* KandyPresenceService.h */,
-				78EBDAF3252D40126B6A0D206C120D74 /* KandyPresenceServiceEnums.h */,
-				878448309703F3F1F528E218631BD86C /* KandyPresenceServiceNotificationDelegate.h */,
-				477A70CEDC3F6FA4D5E13191D990DB7D /* KandyProfileService.h */,
-				580D2F68D4D8EB395A9A82C1F6D96806 /* KandyProfileServiceEnums.h */,
-				FD3F7C842ABE1E87DE206EC7D901BFD7 /* KandyPushNotificationService.h */,
-				8883971291DFC56664D52BBE433F203E /* KandyRecord.h */,
-				5BE8021B86FEFE93FA5BE4DA0E4D44C9 /* KandySDK.h */,
-				9A09B35902FB5AA6290B2606F5E76380 /* KandyServiceErrors.h */,
-				2B7B0B855CBBB52C3FA8BCD9EFEF003F /* KandyServices.h */,
-				66FEC49F948590AC27D10847A2517B54 /* KandySession.h */,
-				0249C6F9E340C22C8E11645A6522476B /* KandySessionManagement.h */,
-				EEC0CF47751E8666DFACFC71F5CA41B4 /* KandySignupInfo.h */,
-				491ABE00D8540DED1DE12C02D87F6D28 /* KandySignupServiceEnums.h */,
-				84B1064D34473BC00BE656A198ADCE9A /* KandySignupServiceSettings.h */,
-				A3B219C95C5FF44D394916BD86DE9C0F /* KandySMSMessage.h */,
-				8DBF0947B01F2356A5C49940D76CBD7A /* KandySocialProfileContactRecord.h */,
-				6246EF93E6AAE65DA93528CE258B4FB6 /* KandySocialProfileContactRecordProtocol.h */,
-				C5DFE553833466A021ACE697B2F16CA8 /* KandySubscriberProvision.h */,
-				874A17E2AB166BC2901540A1B892FBD5 /* KandyTextItemProtocol.h */,
-				6DA65797043A2C4456FEED139C3ADB17 /* KandyTransferProgress.h */,
-				F0B9267E784F229F5C7FA7A578FEBBC7 /* KandyUserInfo.h */,
-				51423E0E5E113DF0E4234ABC0A2393B1 /* KandyUserParams.h */,
-				88BC879246FDB184D2BD1515AACFF061 /* KandyUserProvisionInfo.h */,
-				1F61157479229783D9E98F523BE6EBAA /* KandyVideoCompressionSettings.h */,
-				15313E8FDD3DAA109CB654A27DD79043 /* KandyVideoItemProtocol.h */,
+				9F236B5098298FCC565D4C6824DDD953 /* Firebase.modulemap */,
+				83763AA5646137A03A675521912B6094 /* Firebase.xcconfig */,
+				C66B8590BD4385380DD8DEAC6D1DB261 /* Firebase-dummy.m */,
+				49980837BFE5489972DCB535F30693A5 /* Firebase-prefix.pch */,
+				B5D104FB17FE671CB08264058133DF51 /* Firebase-umbrella.h */,
+				8D7F8F66F7FB9C298FFF8BAE15EA2973 /* Info.plist */,
 			);
-			path = Kandy;
+			name = "Support Files";
+			path = "../Target Support Files/Firebase";
+			sourceTree = "<group>";
+		};
+		B03E6551083B509F3B94132B28CA0C05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52A2BBC17A435407689CCCECF30D6D17 /* Firebase */,
+				3336DD323B603CA6E150C102B98D4269 /* Kandy */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CD224DEDDF2C520DBD6E33AE62978EF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E04D4E34B758A130B24704B7EE6E3F3F /* Firebase.framework */,
+				2B016B56ACAB48E739195979203240F2 /* Pods.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		2FDCAAB615C287D16BF7F1F2AA978246 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23FCF31260D47CEC1494A292DAA1A1E /* FAuthData.h in Headers */,
+				1D925BB011B04DDED982C7946571A67A /* FAuthType.h in Headers */,
+				E60FA42EEC3ECC48701DB55986D25D69 /* FConfig.h in Headers */,
+				E8B534D15D2B25919ACD898217266891 /* FDataSnapshot.h in Headers */,
+				239B10F388840841389B7F09648735B1 /* FEventType.h in Headers */,
+				60F9139BDD38565B78214C4FC5F5729D /* Firebase-umbrella.h in Headers */,
+				1C3EF85CD30E6FF2E51471BD5B3CEB29 /* Firebase.h in Headers */,
+				2F1496011DBBB75777645194AAAFE92D /* FirebaseApp.h in Headers */,
+				6646DA26298257396C7FFE141BB84CC3 /* FirebaseServerValue.h in Headers */,
+				DB05A9DD8244D10C28B6915C514AE15F /* FMutableData.h in Headers */,
+				4D75CF0089B20355B17A851513C4A002 /* FQuery.h in Headers */,
+				191DE2EB9A35585AE0A88BA9F833A1F4 /* FTransactionResult.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC54EB02EF3C0E898E7B14E2C2F39AD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C198A709D2CAD904E0E799AF687902 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		1469924FC52F60B0068FA24EEFCB3EFC /* Pods */ = {
+		A2F6E21B670DC565238510DE02DEA9F1 /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C358AA8BB91700063133597D41C4E0E /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 8D916E953BD63A5308099C784B2DCE87 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				60DB2522D6809309FA2F3B04848E7536 /* Sources */,
-				2E78C4AC537A1782BCFD134B2B8940E0 /* Frameworks */,
+				12B00D9538E716441276B2C82449FBA8 /* Sources */,
+				F932747D1B83E6FD99122CAAEE48F6E9 /* Frameworks */,
+				BC54EB02EF3C0E898E7B14E2C2F39AD9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12BBDF56243AA10E90D9242CE7D2913D /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 2B016B56ACAB48E739195979203240F2 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B7AC9326D819482593FE118E915409D7 /* Firebase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49B346C14D532324DCD14D0FA1347BC6 /* Build configuration list for PBXNativeTarget "Firebase" */;
+			buildPhases = (
+				46E052D320E3B778B76D8393E0BAFE0F /* Sources */,
+				A7E10F383DCD59079712A57B50DCF88E /* Frameworks */,
+				2FDCAAB615C287D16BF7F1F2AA978246 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Pods;
-			productName = Pods;
-			productReference = BFDCEDF11CC5329E8A2F6885DA7FBE21 /* libPods.a */;
-			productType = "com.apple.product-type.library.static";
+			name = Firebase;
+			productName = Firebase;
+			productReference = E04D4E34B758A130B24704B7EE6E3F3F /* Firebase.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -371,113 +537,161 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1F0B9F713A13B4F29BE0C0E7483B187B /* Products */;
+			productRefGroup = CD224DEDDF2C520DBD6E33AE62978EF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1469924FC52F60B0068FA24EEFCB3EFC /* Pods */,
+				B7AC9326D819482593FE118E915409D7 /* Firebase */,
+				A2F6E21B670DC565238510DE02DEA9F1 /* Pods */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		60DB2522D6809309FA2F3B04848E7536 /* Sources */ = {
+		12B00D9538E716441276B2C82449FBA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B991A49F4C12A4F8462C02B69D83DB11 /* Pods-dummy.m in Sources */,
+				0D9B1521BB2ECBC0B0471D39979E7F87 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E052D320E3B778B76D8393E0BAFE0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012A7E018F3D34F159894EBD7EACACF9 /* Empty.m in Sources */,
+				1D9D7FF5237C8CC91EF58DC45AC274FB /* Firebase-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		12BBDF56243AA10E90D9242CE7D2913D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Firebase;
+			target = B7AC9326D819482593FE118E915409D7 /* Firebase */;
+			targetProxy = 8E529488D77F87806DD2D31EFC9C26B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		052A17875CB827423D627183396CEB60 /* Release */ = {
+		239EEAB6A9866AB1A37D808DD23D677A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_BITCODE = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		8BCA14DF906994CF104991F8CD35340F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_BITCODE = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Target",
-					Support,
-					Files/Pods,
-				);
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(PODS_ROOT)/Frameworks/iOS/\"";
-			};
-			name = Debug;
-		};
-		A22CAE9FF4C47A1F7775FDEFA4535091 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_BITCODE = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Target",
-					Support,
-					Files/Pods,
-				);
-				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(PODS_ROOT)/Frameworks/iOS/\"";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */ = {
+		6A12C1AE4F4CCA35BC0F38AE90629255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83763AA5646137A03A675521912B6094 /* Firebase.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Firebase/Firebase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Firebase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Firebase/Firebase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Firebase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7224AD649174A88C25AF79BCC0C24B68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83763AA5646137A03A675521912B6094 /* Firebase.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Firebase/Firebase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Firebase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Firebase/Firebase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Firebase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C07E52C0DBF802AD6D3F185B39186A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -495,7 +709,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -510,12 +723,46 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -523,17 +770,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */,
-				052A17875CB827423D627183396CEB60 /* Release */,
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C358AA8BB91700063133597D41C4E0E /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		49B346C14D532324DCD14D0FA1347BC6 /* Build configuration list for PBXNativeTarget "Firebase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BCA14DF906994CF104991F8CD35340F /* Debug */,
-				A22CAE9FF4C47A1F7775FDEFA4535091 /* Release */,
+				6A12C1AE4F4CCA35BC0F38AE90629255 /* Debug */,
+				7224AD649174A88C25AF79BCC0C24B68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D916E953BD63A5308099C784B2DCE87 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C07E52C0DBF802AD6D3F185B39186A8 /* Debug */,
+				239EEAB6A9866AB1A37D808DD23D677A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
