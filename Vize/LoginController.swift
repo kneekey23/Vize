@@ -49,6 +49,8 @@ class LoginController: UIViewController ,UITextFieldDelegate {
      self.navigationController?.setNavigationBarHidden(true, animated: true)
      userName.delegate = self
         password.delegate = self
+        userName.text = "nicki@shortkey.io"
+        password.text = "goucla23"
         //self.tabBarController?.hidesBottomBarWhenPushed = true
         // Do any additional setup after loading the view, typically from a nib.
     }

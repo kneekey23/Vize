@@ -7,17 +7,40 @@
 //
 
 import UIKit
+import Firebase
 
-class ContentViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ContentViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
 
-
+    var button: UIButton?
+    var projectTopic: String?
+    var dbHead: String?
+    var projectIndex: String?
+    
+    @IBAction func addTask(sender: AnyObject) {
+        
+        button = sender as? UIButton
+        
+        let addTaskField: UITextField = UITextField(frame: CGRect(x: button!.frame.minX, y: button!.frame.minY, width: button!.frame.width, height: button!.frame.height))
+        addTaskField.placeholder = "Enter Task Description"
+        addTaskField.delegate = self
+        addTaskField.font = UIFont.systemFontOfSize(15)
+        addTaskField.borderStyle = UITextBorderStyle.RoundedRect
+        addTaskField.autocorrectionType = UITextAutocorrectionType.No
+        addTaskField.keyboardType = UIKeyboardType.Default
+        addTaskField.returnKeyType = UIReturnKeyType.Done
+        addTaskField.clearButtonMode = UITextFieldViewMode.WhileEditing;
+        addTaskField.contentVerticalAlignment = UIControlContentVerticalAlignment.Center
+        self.view.addSubview(addTaskField)
+        
+        
+    }
     @IBOutlet weak var projectTaskLabel: UILabel!
     @IBOutlet weak var projectTaskTableView: UITableView!
     var pageIndex: Int!
     var labelText: String!
     
     
-    var selectedList: [String]?
+    var selectedList: [Task]?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.projectTaskLabel.text = labelText!
@@ -27,6 +50,35 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        //call to database to save task
+        let ref = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com/projects/" + projectTopic!)
+        
+        switch labelText{
+            
+        case "Project Preparation": dbHead = "prepTasks"
+        case "Tasks in Progress" : dbHead = "progressTasks"
+        case "Tasks To Complete": dbHead = "tasksLeftToComplete"
+        case "Done": dbHead = "doneTasks"
+        default: dbHead = ""
+            
+        }
+        
+        let task = ["title": textField.text!]
+        
+        ref.childByAppendingPath(projectTopic!).childByAppendingPath(projectIndex).childByAppendingPath(dbHead!).updateChildValues(task)
+        
+        //uitext field back to button
+        button?.frame = CGRect(x: textField.frame.minX, y: textField.frame.minY, width: textField.frame.width, height: textField.frame.height)
+        
+        self.view.addSubview(button!)
+        textField.hidden = true
+        
+        projectTaskTableView.reloadData()
+        textField.resignFirstResponder();
+        return true;
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,7 +108,7 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Configure the cell...
         if let myTableRows = self.selectedList{
             let item = myTableRows[indexPath.section]
-            cell.textLabel?.text = item
+            cell.textLabel?.text = item.title
         }
         
         return cell
@@ -78,7 +130,7 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
                     
                     let indexPath = self.projectTaskTableView.indexPathForCell(cell)
                     let tableRow = self.selectedList?[indexPath!.row]
-                    taskViewController.taskDescriptionSelected = tableRow
+                    taskViewController.taskDescriptionSelected = tableRow?.description
                     
                 }
                 

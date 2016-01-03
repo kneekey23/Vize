@@ -130,7 +130,8 @@ class ProjectViewController: UIViewController, UITableViewDelegate, UITableViewD
                     
                     let indexPath = self.projectTableView.indexPathForCell(cell)
                     let tableRow = self.projectList[indexPath!.row]
-                    
+                    bpvViewController.projectIndex = String(indexPath!.row)
+                    bpvViewController.projectTopic = projectTopic!
                     bpvViewController.progressTasks = tableRow.progressTasks
                     bpvViewController.tasksToComplete = tableRow.tasksToComplete
                     bpvViewController.doneTasks = tableRow.doneTasks

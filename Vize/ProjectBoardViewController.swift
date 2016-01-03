@@ -10,12 +10,13 @@ import UIKit
 
 class ProjectBoardViewController: UIViewController, UIPageViewControllerDataSource {
      private var pageViewController: UIPageViewController?
-    
-    var projectTaskList: [String] = []
-    var prepTasks: [String]?
-    var progressTasks: [String]?
-    var tasksToComplete: [String]?
-    var doneTasks: [String]?
+    var projectTopic: String?
+    var projectIndex: String?
+    var projectTaskList: [Task] = []
+    var prepTasks: [Task]?
+    var progressTasks: [Task]?
+    var tasksToComplete: [Task]?
+    var doneTasks: [Task]?
     var projectLabelList: [String] = ["Project Preparation", "Tasks in Progress", "Tasks To Complete", "Done"]
 
     
@@ -84,6 +85,8 @@ class ProjectBoardViewController: UIViewController, UIPageViewControllerDataSour
         }
         
         vc.selectedList = projectTaskList
+        vc.projectTopic = projectTopic!
+        vc.projectIndex = projectIndex
         
         vc.pageIndex = index
         
