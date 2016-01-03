@@ -7,11 +7,15 @@
 //
 import Foundation
 import UIKit
+import Firebase
 
 
 class TaskViewController: UIViewController, UITextViewDelegate {
+      let ref = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com")
 
+    @IBOutlet weak var doneTaskButton: UIButton!
 
+    @IBOutlet weak var grabTaskButton: UIButton!
     @IBAction func markAsComplete(sender: AnyObject) {
         
     }
@@ -30,6 +34,8 @@ class TaskViewController: UIViewController, UITextViewDelegate {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    var userRole: String?
+    
     var taskDescriptionSelected: String?
     
     override func viewDidLoad() {
@@ -37,6 +43,33 @@ class TaskViewController: UIViewController, UITextViewDelegate {
         
         taskDescription.delegate = self
         taskDescription.text = taskDescriptionSelected
+        
+        ref.observeAuthEventWithBlock({ authData in
+            if authData != nil {
+                // user authenticated
+                print(authData)
+                
+                let userUrl = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com/users/" + authData.uid)
+                
+                
+                userUrl.observeSingleEventOfType(.Value, withBlock: { snapshot in
+                    if let role = snapshot.value["role"] as? String {
+                        self.userRole = role
+                        
+                        switch self.userRole!
+                        {
+                        case "student": self.taskDescription.editable = false
+                        case "teacher": self.taskDescription.editable = true
+                        default: self.taskDescription.editable = false
+                        }
+                    }
+                    
+                })
+                
+            } else {
+                // No user is signed in
+            }
+        })
     }
 
     

@@ -653,7 +653,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRD-TC-HDa">
-                                <rect key="frame" x="20" y="336" width="335" height="54"/>
+                                <rect key="frame" x="20" y="406" width="335" height="54"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
                                 <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -676,24 +676,14 @@
                                     <action selector="markAsComplete:" destination="mv8-9u-tNx" eventType="touchUpInside" id="hRJ-6W-IYA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klB-eS-Oif">
-                                <rect key="frame" x="20" y="412" width="335" height="54"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
-                                <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Edit Task">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="editTask:" destination="mv8-9u-tNx" eventType="touchUpInside" id="QVO-gN-6F6"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.36315083929999997" green="0.0" blue="0.0" alpha="0.48928420610000001" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.36315083925252534" green="0.0" blue="0.0" alpha="0.48928420608108109" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="doneTaskButton" destination="KKb-Ry-cJ3" id="ebB-C4-3Bl"/>
+                        <outlet property="grabTaskButton" destination="GRD-TC-HDa" id="ezT-yA-nBC"/>
                         <outlet property="taskDescription" destination="ICH-hN-CG9" id="76Q-Vl-hB8"/>
                     </connections>
                 </viewController>
