@@ -85,11 +85,43 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
                    let cell = sender as! UITableViewCell
                     
                     let indexPath = self.listTableView.indexPathForCell(cell)
-                   let selectedSubjectOrCategory = self.selectedList?[indexPath!.row]
+                   let selectedSubjectOrCategory = self.selectedList?[indexPath!.row].lowercaseString
                     
-                //send selectedSubjectOrCategory to db to get correct project list and popuale. then set it equal to a variable on next view controller.
-//                    projectViewController.projectList = //projects that came back from db here.
+                    
+//                    let saveRef = Firebase(url:"https://brilliant-inferno-3353.firebaseio.com/projects")
+//                    let mathProjectOne = ["title": "Probability In Everyday Life", "description": "This is the description for this project", "grade": "9"]
+//                    let mathProjectTwo = ["title": "Domino Effect", "description": "This is the description for this project", "grade": "6"]
+//
+//                    var projRef = saveRef.childByAppendingPath("math")
 //                    
+//                    var mathProjects = ["0": mathProjectOne, "1": mathProjectTwo]
+//                    projRef.setValue(mathProjects)
+
+                    // Get a reference to our db endpoint
+                    var ref = Firebase(url:"https://brilliant-inferno-3353.firebaseio.com/projects/" + selectedSubjectOrCategory!)
+                    // Attach a closure to read the data
+                    ref.observeSingleEventOfType(.Value, withBlock: { snapshot in
+                        var projects = [Project]()
+                        
+                        for item in snapshot.children {
+                            let project = Project(snapshot: item as! FDataSnapshot)
+                            projects.append(project)
+                        }
+                        
+                        for proj in projects {
+                            print(proj.title)
+                            print(proj.grade)
+                            print(proj.description)
+                        }
+                        
+                        //send selectedSubjectOrCategory to db to get correct project list and popuale. then set it equal to a variable on next view controller.
+                        projectViewController.projectList = projects
+                        
+                        }, withCancelBlock: { error in
+                            print(error.description)
+                    })
+                    
+                
                }
                 
             }

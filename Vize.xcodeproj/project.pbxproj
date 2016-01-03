@@ -22,10 +22,15 @@
 		81AF48FA1C38956500309615 /* RewardsSystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF48F91C38956500309615 /* RewardsSystemViewController.swift */; };
 		81AF48FC1C3896AD00309615 /* PointsRedemptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF48FB1C3896AD00309615 /* PointsRedemptionViewController.swift */; };
 		81AF48FE1C3896FA00309615 /* PointsRedemptionInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF48FD1C3896FA00309615 /* PointsRedemptionInfoViewController.swift */; };
+<<<<<<< HEAD
+		8B9335631C38D7F4002E9891 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9335621C38D7F3002E9891 /* Project.swift */; };
+		8B9335671C38DBDC002E9891 /* libsmisdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9335651C38DBDC002E9891 /* libsmisdk.a */; };
+=======
 		81AF49001C38B9EC00309615 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF48FF1C38B9EC00309615 /* ContentViewController.swift */; };
 		81AF49021C38BBA600309615 /* ProjectBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF49011C38BBA600309615 /* ProjectBoardViewController.swift */; };
 		81AF49041C38CC2C00309615 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF49031C38CC2C00309615 /* Extensions.swift */; };
 		81AF49061C38D7ED00309615 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF49051C38D7ED00309615 /* TaskViewController.swift */; };
+>>>>>>> 13a1b44e294f04fb86f0ed369d030c5afc74e265
 		8B9C37DE1C386B0E0012EB24 /* DataRewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C37DD1C386B0E0012EB24 /* DataRewards.swift */; };
 		8B9C37E01C386EC10012EB24 /* SponsoredData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C37DF1C386EC10012EB24 /* SponsoredData.swift */; };
 /* End PBXBuildFile section */
@@ -49,10 +54,17 @@
 		81AF48F91C38956500309615 /* RewardsSystemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsSystemViewController.swift; sourceTree = "<group>"; };
 		81AF48FB1C3896AD00309615 /* PointsRedemptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsRedemptionViewController.swift; sourceTree = "<group>"; };
 		81AF48FD1C3896FA00309615 /* PointsRedemptionInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsRedemptionInfoViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		8B9335621C38D7F3002E9891 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		8B9335651C38DBDC002E9891 /* libsmisdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsmisdk.a; sourceTree = "<group>"; };
+		8B9335661C38DBDC002E9891 /* SmiSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmiSdk.h; sourceTree = "<group>"; };
+		8B9335691C38E2FB002E9891 /* BridgeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+=======
 		81AF48FF1C38B9EC00309615 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		81AF49011C38BBA600309615 /* ProjectBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectBoardViewController.swift; sourceTree = "<group>"; };
 		81AF49031C38CC2C00309615 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		81AF49051C38D7ED00309615 /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+>>>>>>> 13a1b44e294f04fb86f0ed369d030c5afc74e265
 		8B9C37DD1C386B0E0012EB24 /* DataRewards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRewards.swift; sourceTree = "<group>"; };
 		8B9C37DF1C386EC10012EB24 /* SponsoredData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SponsoredData.swift; sourceTree = "<group>"; };
 		ED1CDE8EB91138C49432709C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B9335671C38DBDC002E9891 /* libsmisdk.a in Frameworks */,
 				2FF7D30C9304347AA0A7E1C7 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +112,10 @@
 		81AF48D91C384BE700309615 /* Vize */ = {
 			isa = PBXGroup;
 			children = (
+				8B9335691C38E2FB002E9891 /* BridgeHeader.h */,
+				8B9335651C38DBDC002E9891 /* libsmisdk.a */,
+				8B9335661C38DBDC002E9891 /* SmiSdk.h */,
+				8B9335611C38D76E002E9891 /* Models */,
 				81AF48DA1C384BE700309615 /* AppDelegate.swift */,
 				81AF48DC1C384BE700309615 /* LoginController.swift */,
 				81AF48DE1C384BE700309615 /* Main.storyboard */,
@@ -122,6 +139,14 @@
 				81AF49051C38D7ED00309615 /* TaskViewController.swift */,
 			);
 			path = Vize;
+			sourceTree = "<group>";
+		};
+		8B9335611C38D76E002E9891 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B9335621C38D7F3002E9891 /* Project.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		C373F3DF20DBA56562B31F9D /* Pods */ = {
@@ -261,6 +286,7 @@
 				8B9C37DE1C386B0E0012EB24 /* DataRewards.swift in Sources */,
 				81AF48F31C3873D200309615 /* CreateAccountViewController.swift in Sources */,
 				81AF48F51C38742400309615 /* SurveyViewController.swift in Sources */,
+				8B9335631C38D7F4002E9891 /* Project.swift in Sources */,
 				81AF48F11C38711500309615 /* RewardsViewController.swift in Sources */,
 				81AF49001C38B9EC00309615 /* ContentViewController.swift in Sources */,
 				81AF48EF1C3870D500309615 /* ProjectViewController.swift in Sources */,
@@ -392,9 +418,12 @@
 					"$(PROJECT_DIR)/Pods/Target",
 					Support,
 					Files/Pods,
+					"$(PROJECT_DIR)/Vize",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shortkey.Vize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Vize/BridgeHeader.h";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Vize/";
 			};
 			name = Debug;
 		};
@@ -412,9 +441,12 @@
 					"$(PROJECT_DIR)/Pods/Target",
 					Support,
 					Files/Pods,
+					"$(PROJECT_DIR)/Vize",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shortkey.Vize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Vize/BridgeHeader.h";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/Vize/";
 			};
 			name = Release;
 		};
