@@ -94,31 +94,20 @@ class PointsRedemptionViewController: UIViewController, UITableViewDataSource, U
     
     func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
         self.dismissViewControllerAnimated(true, completion: nil)
-        NSLog(String(result.rawValue))
-//        if result == Cancelled {
-//        }
-//            else if result == .Sent {
-//                NSLog("Message sent")
-//            }
-//            else {
-//                NSLog("Message failed")
-//            }
+        
+        if result == MessageComposeResultCancelled {
+            NSLog("Message cancelled")
+        }
+        else if result == MessageComposeResultSent {
+            NSLog("Message sent")
+            
+        }
+        else {
+            NSLog("Message failed")
+        }
         
     }
     
-    func rewardOnUserRegistration() {
-        let adId: String = "myAdId" //ASIdentifierManager.sharedManager().advertisingIdentifier().UUIDString()
-        let bundleId: String = NSBundle.mainBundle().bundleIdentifier!
-        let temp: String = "http://aus-api.cloudmi.datami.com/dev/goapi/action/registration/"
-        let url: String = temp.stringByAppendingString(bundleId).stringByAppendingString("/")
-        var urlWithAdId: String = url.stringByAppendingString(adId)
-        NSLog("userRegistration url: %@", urlWithAdId)
-        var session: NSURLSession = NSURLSession.sharedSession()
-        session.dataTaskWithURL(NSURL(string: urlWithAdId)!, completionHandler: {(data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
-            // handle response
-            NSLog("userRegistration resp: %@", data!)
-        }).resume()
-    }
     
     func rewardOnUserTransaction() {
         print("in rewardOnUserTransaction")
