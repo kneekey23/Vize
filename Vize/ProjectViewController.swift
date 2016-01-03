@@ -13,19 +13,20 @@ class ProjectViewController: UIViewController{
   
     @IBOutlet weak var projectTableView: UITableView!
     //var featuredRouteList:Array<DDBTableRow>?
-    var lock:NSLock?
     var lastEvaluatedKey:[NSObject : AnyObject]!
     var  doneLoading = false
     
     var needsToRefresh = true
-    var projectList: [Project] = []
+    var projectList: [Project]!
     //var featuredRouteList: [String] = ["Tourist Route", "Lazy Sunday Route"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //featuredRouteTable.separatorInset = UIEdgeInsetsZero
-        //featuredRouteList = []
-        lock = NSLock()
+        if projectList == nil {
+            projectList = []
+        }
+        projectTableView.reloadData()
+
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -33,7 +34,7 @@ class ProjectViewController: UIViewController{
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
+        projectTableView.reloadData()
         if self.needsToRefresh {
            // self.refreshList(true)
             self.needsToRefresh = false
@@ -45,48 +46,6 @@ class ProjectViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
     
-//    func refreshList(startFromBeginning: Bool)  {
-//        if (self.lock?.tryLock() != nil) {
-//            if startFromBeginning {
-//                self.lastEvaluatedKey = nil;
-//                self.doneLoading = false
-//            }
-//            
-//            
-//            UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-//            
-//            let dynamoDBObjectMapper = AWSDynamoDBObjectMapper.defaultDynamoDBObjectMapper()
-//            let queryExpression = AWSDynamoDBScanExpression()
-//            queryExpression.exclusiveStartKey = self.lastEvaluatedKey
-//            queryExpression.limit = 20;
-//            dynamoDBObjectMapper.scan(DDBTableRow.self, expression: queryExpression).continueWithExecutor(AWSExecutor.mainThreadExecutor(), withBlock: { (task:AWSTask!) -> AnyObject! in
-//                
-//                if self.lastEvaluatedKey == nil {
-//                    self.featuredRouteList?.removeAll(keepCapacity: true)
-//                }
-//                
-//                if task.result != nil {
-//                    let paginatedOutput = task.result as! AWSDynamoDBPaginatedOutput
-//                    for item in paginatedOutput.items as! [DDBTableRow] {
-//                        self.featuredRouteList?.append(item)
-//                    }
-//                    
-//                    self.lastEvaluatedKey = paginatedOutput.lastEvaluatedKey
-//                    if paginatedOutput.lastEvaluatedKey == nil {
-//                        self.doneLoading = true
-//                    }
-//                }
-//                
-//                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-//                self.featuredRouteTable.reloadData()
-//                
-//                if ((task.error) != nil) {
-//                    print("Error: \(task.error)")
-//                }
-//                return nil
-//            })
-//        }
-//    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return projectList.count
@@ -99,7 +58,7 @@ class ProjectViewController: UIViewController{
         
             let item = projectList[indexPath.row]
             cell.textLabel?.text = item.title
-            cell.detailTextLabel?.text = item.grade
+            cell.detailTextLabel?.text = "Grade" + item.grade
         
         
         return cell
