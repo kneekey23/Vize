@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import SmiSdk.h
+//import BridgeHeader.h
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-       // SmiSdk.getAppSDAuth(mySdkKey, userId: myUserId, showSDMessage : true)
+        SmiSdk.getAppSDAuth("dmi-att-hack-68fcfe5e708bfaa3806c4888912ea6f2ecb446fd", userId: "vizeapp", showSDMessage : true)
         return true
     }
 
@@ -43,21 +43,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-//    func receivedStateChage(notif: NSNotification) {
-//        var sr: SmiResult = notif.object
-//        NSLog("receivedStateChage, sdState: %ld", Int(sr.sdState))
-//        if sr.sdState == SD_AVAILABLE {
-//            // TODO: show a banner or message to user, indicating that the data usage is sponsored and do not apply to user data plan
-//            
-//        } else if sr.sdState == SD_NOT_AVAILABLE {
-//            // TODO: show a banner or message to user, indicating that the data
-//            ("receivedStateChage, sdReason %ld", Int(sr.sdReason))
-//        }
-//        else if sr.sdState == SD_WIFI {
-//            // wifi connection
-//        }
-//        
-//    }
+    func receivedStateChage(notif: NSNotification) {
+        var sr: SmiResult = notif.object as! SmiResult
+//        NSLog("receivedStateChange, sdState: %ld", Int(sr.sdState))
+        if String(sr.sdState) == "SD_AVAILABLE" {
+            // TODO: show a banner or message to user, indicating that the data usage is sponsored and do not apply to user data plan
+            
+        } else if String(sr.sdState) == "SD_NOT_AVAILABLE" {
+            // TODO: show a banner or message to user, indicating that the data
+            ("receivedStateChange, sdReason %ld", String(sr.sdReason))
+        }
+        else if String(sr.sdState) == "SD_WIFI" {
+            // wifi connection
+        }
+        
+    }
 
 
 }

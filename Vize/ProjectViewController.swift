@@ -18,7 +18,7 @@ class ProjectViewController: UIViewController{
     var  doneLoading = false
     
     var needsToRefresh = true
-    var projectList: [String] = ["Test Project"]
+    var projectList: [Project] = []
     //var featuredRouteList: [String] = ["Tourist Route", "Lazy Sunday Route"]
     
     override func viewDidLoad() {
@@ -98,8 +98,8 @@ class ProjectViewController: UIViewController{
         // Configure the cell...
         
             let item = projectList[indexPath.row]
-            cell.textLabel?.text = item
-            cell.detailTextLabel?.text = "Grade 9"
+            cell.textLabel?.text = item.title
+            cell.detailTextLabel?.text = item.grade
         
         
         return cell
