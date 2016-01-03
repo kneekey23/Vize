@@ -24,7 +24,7 @@ class MessageViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCellWithIdentifier("messageCell", forIndexPath: indexPath)
         
         let person = chats[indexPath.row]
-        cell.detailTextLabel?.text = person
+        cell.textLabel?.text = person
         
         return cell
     }

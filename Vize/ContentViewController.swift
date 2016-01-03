@@ -40,7 +40,7 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
     var labelText: String!
     
     
-    var selectedList: [String]?
+    var selectedList: [Task]?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.projectTaskLabel.text = labelText!
@@ -54,25 +54,29 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         //call to database to save task
-//        let ref = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com/projects/" + projectTopic!)
-//        
-//        switch labelText{
-//        case "Project Preparation": dbHead = "prepTasks"
-//        case "Tasks in Progress" : dbHead = "progressTasks"
-//        case "Tasks To Complete": dbHead = "tasksLeftToComplete"
-//        case "Done": dbHead = "doneTasks"
-//        default: dbHead = ""
-//            
-//        }
-//        
-//        let tasks: [String] = [textField.text!]
-//        
-//        ref.childByAppendingPath(projectTopic!).childByAppendingPath(projectIndex).childByAppendingPath(dbHead!).setValue(tasks)
+        let ref = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com/projects/" + projectTopic!)
+        
+        switch labelText{
+            
+        case "Project Preparation": dbHead = "prepTasks"
+        case "Tasks in Progress" : dbHead = "progressTasks"
+        case "Tasks To Complete": dbHead = "tasksLeftToComplete"
+        case "Done": dbHead = "doneTasks"
+        default: dbHead = ""
+            
+        }
+        
+        let task = ["title": textField.text!]
+        
+        ref.childByAppendingPath(projectTopic!).childByAppendingPath(projectIndex).childByAppendingPath(dbHead!).updateChildValues(task)
         
         //uitext field back to button
         button?.frame = CGRect(x: textField.frame.minX, y: textField.frame.minY, width: textField.frame.width, height: textField.frame.height)
-        self.view.addSubview(button!)
         
+        self.view.addSubview(button!)
+        textField.hidden = true
+        
+        projectTaskTableView.reloadData()
         textField.resignFirstResponder();
         return true;
     }
@@ -104,7 +108,7 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Configure the cell...
         if let myTableRows = self.selectedList{
             let item = myTableRows[indexPath.section]
-            cell.textLabel?.text = item
+            cell.textLabel?.text = item.title
         }
         
         return cell
@@ -126,7 +130,7 @@ class ContentViewController: UIViewController, UITableViewDelegate, UITableViewD
                     
                     let indexPath = self.projectTaskTableView.indexPathForCell(cell)
                     let tableRow = self.selectedList?[indexPath!.row]
-                    taskViewController.taskDescriptionSelected = tableRow
+                    taskViewController.taskDescriptionSelected = tableRow?.description
                     
                 }
                 
