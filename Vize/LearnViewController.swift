@@ -16,6 +16,8 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBOutlet weak var listTableView: UITableView!
     
+    let dbref = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com")
+    
     @IBAction func chooseList(sender: AnyObject) {
         
        
@@ -89,16 +91,18 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
                     
                     
 //                    let saveRef = Firebase(url:"https://brilliant-inferno-3353.firebaseio.com/projects")
-//                    let mathProjectOne = ["title": "Probability In Everyday Life", "description": "This is the description for this project", "grade": "9"]
-//                    let mathProjectTwo = ["title": "Domino Effect", "description": "This is the description for this project", "grade": "6"]
+//                    let biologyProjectOne = ["title": "Plant Cell Development", "description": "This is the description for this project", "grade": "10"]
+//                    let biologyProjectTwo = ["title": "Osmosis", "description": "This is the description for this project", "grade": "7"]
 //
-//                    var projRef = saveRef.childByAppendingPath("math")
+//                    var projRef = saveRef.childByAppendingPath("biology")
 //                    
-//                    var mathProjects = ["0": mathProjectOne, "1": mathProjectTwo]
-//                    projRef.setValue(mathProjects)
+//                    var biologyProjects = ["0": biologyProjectOne, "1": biologyProjectTwo]
+//                    projRef.setValue(biologyProjects)
 
                     // Get a reference to our db endpoint
-                    var ref = Firebase(url:"https://brilliant-inferno-3353.firebaseio.com/projects/" + selectedSubjectOrCategory!)
+
+                    let ref = Firebase(url: "https://brilliant-inferno-3353.firebaseio.com/projects/" + selectedSubjectOrCategory!)
+
                     // Attach a closure to read the data
                     ref.observeSingleEventOfType(.Value, withBlock: { snapshot in
                         var projects = [Project]()
@@ -116,7 +120,9 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
                         
                         //send selectedSubjectOrCategory to db to get correct project list and popuale. then set it equal to a variable on next view controller.
                         projectViewController.projectList = projects
-                        
+
+                        projectViewController.projectTableView.reloadData()
+
                         }, withCancelBlock: { error in
                             print(error.description)
                     })
@@ -128,6 +134,7 @@ class LearnViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
         
         if segue.identifier == "logOut"{
+            dbref.unauth()
             let loginVC = segue.destinationViewController as! LoginController
             loginVC.hidesBottomBarWhenPushed = true
         }

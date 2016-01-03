@@ -20,7 +20,8 @@ class LoginController: UIViewController ,UITextFieldDelegate {
   
     @IBAction func logIn(sender: AnyObject) {
         
-        
+        let loginButton: UIButton = sender as! UIButton
+        loginButton.setTitle("Loading...", forState: UIControlState.Normal)
         ref.authUser(userName.text, password: password.text) {
             error, authData in
             if error != nil {

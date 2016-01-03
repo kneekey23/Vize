@@ -97,7 +97,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.80784313725490198" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MrB-N1-nuE" secondAttribute="bottom" constant="151" id="4ln-8N-aRA"/>
                             <constraint firstItem="kpa-UK-oUX" firstAttribute="top" secondItem="jDi-tX-XoO" secondAttribute="bottom" constant="22" id="6UD-Dw-XB4"/>
@@ -137,7 +137,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="j9v-lz-Ahd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="0.0"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -234,7 +234,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rt-BO-9hm">
                                 <rect key="frame" x="23" y="582" width="329" height="47"/>
-                                <color key="backgroundColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="329" id="5ej-UR-a0X"/>
                                     <constraint firstAttribute="height" constant="47" id="OFB-4U-ORZ"/>
@@ -315,7 +315,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fht-Kp-Hrm">
                                 <rect key="frame" x="30" y="586" width="325" height="51"/>
-                                <color key="backgroundColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="whD-PU-QJ3"/>
                                 </constraints>
@@ -349,11 +349,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mzq-Rm-YTv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <color key="textShadowColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -458,7 +458,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="59" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d8i-LZ-cGY">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="projectCell" textLabel="sQg-qb-GX5" detailTextLabel="UnX-Fz-mfB" rowHeight="59" style="IBUITableViewCellStyleSubtitle" id="65m-48-rs6">
@@ -567,7 +567,7 @@
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="6We-iD-kgT">
                                 <rect key="frame" x="32" y="100" width="311" height="567"/>
-                                <color key="backgroundColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="projectBoardCell" textLabel="Mpc-1t-1Yj" style="IBUITableViewCellStyleDefault" id="Zqd-qk-A4G">
                                         <rect key="frame" x="0.0" y="49.5" width="311" height="44"/>
@@ -596,7 +596,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6We-iD-kgT" firstAttribute="top" secondItem="V4p-Cm-h3A" secondAttribute="bottom" constant="8" symbolic="YES" id="8Eu-z2-euR"/>
                             <constraint firstItem="6We-iD-kgT" firstAttribute="centerX" secondItem="eyD-Pq-3Fo" secondAttribute="centerX" id="Apb-wv-No3"/>
@@ -653,7 +653,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRD-TC-HDa">
-                                <rect key="frame" x="20" y="336" width="335" height="54"/>
+                                <rect key="frame" x="20" y="406" width="335" height="54"/>
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
                                 <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -676,24 +676,14 @@
                                     <action selector="markAsComplete:" destination="mv8-9u-tNx" eventType="touchUpInside" id="hRJ-6W-IYA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klB-eS-Oif">
-                                <rect key="frame" x="20" y="412" width="335" height="54"/>
-                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
-                                <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Edit Task">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="editTask:" destination="mv8-9u-tNx" eventType="touchUpInside" id="QVO-gN-6F6"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.36315083929999997" green="0.0" blue="0.0" alpha="0.48928420610000001" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.36315083925252534" green="0.0" blue="0.0" alpha="0.48928420608108109" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="doneTaskButton" destination="KKb-Ry-cJ3" id="ebB-C4-3Bl"/>
+                        <outlet property="grabTaskButton" destination="GRD-TC-HDa" id="ezT-yA-nBC"/>
                         <outlet property="taskDescription" destination="ICH-hN-CG9" id="76Q-Vl-hB8"/>
                     </connections>
                 </viewController>
@@ -713,7 +703,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Rewards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daY-sd-yOq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Rewards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daY-sd-yOq">
                                 <rect key="frame" x="94" y="115" width="175" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="D2p-kB-gGD"/>
@@ -722,7 +712,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuK-OW-ajK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuK-OW-ajK">
                                 <rect key="frame" x="111" y="183" width="146" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="agu-mP-AMP"/>
@@ -731,13 +721,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="hrline" translatesAutoresizingMaskIntoConstraints="NO" id="sDU-hW-ZNt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hrline" translatesAutoresizingMaskIntoConstraints="NO" id="sDU-hW-ZNt">
                                 <rect key="frame" x="64" y="295" width="240" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="wRX-3C-ci1"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vize Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xU1-nW-OPO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vize Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xU1-nW-OPO">
                                 <rect key="frame" x="122" y="308" width="125" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="pNM-iL-RoT"/>
@@ -747,7 +737,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJY-WY-qLK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJY-WY-qLK">
                                 <rect key="frame" x="49" y="353" width="277" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="OBJ-2T-lW4"/>
@@ -758,7 +748,7 @@
                                     <segue destination="oSf-OK-V1y" kind="presentation" id="joA-wF-BsH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgG-e0-nKU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgG-e0-nKU">
                                 <rect key="frame" x="64" y="404" width="245" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="xSP-yt-GJx"/>
@@ -771,7 +761,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRc-7F-xm3">
                                 <rect key="frame" x="26" y="534" width="323" height="50"/>
-                                <color key="backgroundColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="jNZ-Bg-GAq"/>
                                 </constraints>
@@ -810,6 +800,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="My Rewards" image="Trophy-32" selectedImage="Trophy-32" id="PMX-BO-4T1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="pointCount" destination="TuK-OW-ajK" id="lN4-xI-Kqy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LR7-Zu-2Hg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -838,12 +831,12 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPM-ZU-jQk">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Reward System" id="p5b-nH-TWk">
                                         <barButtonItem key="leftBarButtonItem" title="X" id="DCZ-g7-ero">
-                                            <color key="tintColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="closeModal:" destination="oSf-OK-V1y" id="WJW-gq-cFk"/>
                                             </connections>
@@ -884,12 +877,12 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rWk-li-4z4">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Point Redemption" id="0IR-Hz-ByF">
                                         <barButtonItem key="leftBarButtonItem" title="X" id="DRw-As-5BO">
-                                            <color key="tintColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="closeModal:" destination="865-Lp-ASS" id="Mnm-Ak-RuW"/>
                                             </connections>
@@ -971,12 +964,12 @@
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3G-4G-ajA">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Point Redemption Information" id="8fe-K3-Ii9">
                                         <barButtonItem key="leftBarButtonItem" title="X" id="zXt-Of-EMM">
-                                            <color key="tintColor" red="0.21960784310000001" green="0.83529411760000005" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.0" green="0.80784313730000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="closeModal:" destination="KU7-fo-lWn" id="RwB-j5-KEh"/>
                                             </connections>
@@ -1029,6 +1022,6 @@
         <image name="hrline" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0y7-9R-mim"/>
+        <segue reference="a7W-Uo-Ki7"/>
     </inferredMetricsTieBreakers>
 </document>
