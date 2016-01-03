@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-class TaskViewController: UIViewController {
+class TaskViewController: UIViewController, UITextViewDelegate {
 
 
     @IBAction func markAsComplete(sender: AnyObject) {
@@ -35,12 +35,16 @@ class TaskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        taskDescription.delegate = self
         taskDescription.text = taskDescriptionSelected
     }
+
     
-    //adds the ability to get rid of they keyboard for any text field on return.NJK
-    func textFieldShouldReturn(textField: UITextField) -> Bool{
-        textField.resignFirstResponder()
-        return true;
+    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
     }
 }
