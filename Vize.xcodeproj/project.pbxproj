@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27195E33013C67655767CF6B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2690BCE969D54A689873687B /* libPods.a */; };
+		2FF7D30C9304347AA0A7E1C7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3514BB3D53BBADB0BCE35370 /* Pods.framework */; };
 		81AF48DB1C384BE700309615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF48DA1C384BE700309615 /* AppDelegate.swift */; };
 		81AF48DD1C384BE700309615 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF48DC1C384BE700309615 /* LoginController.swift */; };
 		81AF48E01C384BE700309615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AF48DE1C384BE700309615 /* Main.storyboard */; };
@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2690BCE969D54A689873687B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3514BB3D53BBADB0BCE35370 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A4B6EFEB6E1481BE090FFDA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		81AF48D71C384BE700309615 /* Vize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AF48DA1C384BE700309615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27195E33013C67655767CF6B /* libPods.a in Frameworks */,
+				2FF7D30C9304347AA0A7E1C7 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +65,7 @@
 		498C7A1AADE40285FF5D5C97 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2690BCE969D54A689873687B /* libPods.a */,
+				3514BB3D53BBADB0BCE35370 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
